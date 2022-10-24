@@ -4,7 +4,7 @@ describe('sample test', () => {
   })
 
   it('displays the resources text', () => {
-    cy.get('h1')
+    cy.get('nav')
     .contains('Welcome to my app!');
   })
   it('renders the Netlify logo image', () => {
