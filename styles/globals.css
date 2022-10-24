@@ -4,7 +4,7 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Outfit', sans-serif;
+  font-family: 'Outfit', sans-serif !important;
 }
 :root {
   --txt-color: hsl(170 100% 50%);
@@ -65,13 +65,13 @@ h6{
 /*================== button styling ================*/
 
 .btn-primary{
-  background-color: #E60000;
-  border-radius: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  color: #fff;
-  border: 1px solid #E60000;
-  padding: 10px 10px;
+  background-color: #E60000 !important;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
+  color: #fff !important;
+  border: 1px solid #E60000 !important;
+  padding: 10px 10px !important;
 }
 .btn-secondary{
   border-radius: 8px;
