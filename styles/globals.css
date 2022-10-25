@@ -201,7 +201,7 @@ h6{
 }
 
 .unordered-list ul > li:before { 
-  background: url("./Assets/Home_Assets/check_mark.png");
+  background: url('./Assets/Home_Assets/check_mark.png') !important;
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
