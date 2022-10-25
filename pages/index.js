@@ -1,17 +1,16 @@
 import Head from 'next/head'
 import Header from '@components/Header'
 import Footer from '@components/Footer'
-// import Head from 'next/head'
 // import Image from 'next/image'
-// import Banner from './Components/banner'
-// import Logo from './Components/logo'
+import Banner from '@components/banner'
+import Logo from '../components/logo'
 // import List from './Components/Lists/list'
-// import WhatIsIntime from './Components/what-is-intime'
-// import FeatureIntegration from './Components/feature-integration'
-// import ComoundYourGrowth from './Components/compound-your-growth'
+import WhatIsIntime from '../components/what-is-intime'
+import FeatureIntegration from '../components/feature-integration'
+import ComoundYourGrowth from '../components/compound-your-growth'
 import Script from 'next/script';
-// import CTA from './Components/CTA'
-// import Testimonials from './Components/testimonials'
+import CTA from '../components/CTA'
+import Testimonials from '../components/testimonials'
 
 export default function Home() {
   return (
@@ -22,7 +21,7 @@ export default function Home() {
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
       </Head>
       <Header/>
-      {/* <div>
+      <div>
         <Banner />
         <Logo />
         <WhatIsIntime />
@@ -30,7 +29,7 @@ export default function Home() {
         <Testimonials />
         <ComoundYourGrowth />
         <CTA />
-      </div> */}
+      </div>
       <footer>
         <Footer />
       </footer>
