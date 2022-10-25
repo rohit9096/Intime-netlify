@@ -10,7 +10,7 @@ import FeatureIntegration from '../components/feature-integration'
 import ComoundYourGrowth from '../components/compound-your-growth'
 import Script from 'next/script';
 import CTA from '../components/CTA'
-import Testimonials from '../components/testimonials'
+// import Testimonials from '../components/testimonials'
 
 export default function Home() {
   return (
@@ -26,7 +26,7 @@ export default function Home() {
         <Logo />
         <WhatIsIntime />
         <FeatureIntegration />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <ComoundYourGrowth />
         <CTA />
       </div>
