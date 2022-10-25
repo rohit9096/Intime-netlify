@@ -48,13 +48,13 @@ function CreateNewAccount() {
                             <div className="d-flex gap-2 align-items-center">
                                 <input type="checkbox" className="form-check-input mt-0" id="exampleCheck1" />
                                 <label className="form-check-label" htmlFor="exampleCheck1">I accept the</label>
-                                <a href="#" className="text-purple">Terms of Service</a>
+                                <a href="#" className="text-purple text-decoration-none">Terms of Service</a>
                             </div>
                         </div>
                         <button type="submit" className="btn btn-success w-100 text-white">CREATE MY ACCOUNT</button>
                         <div className="d-flex gap-2 justify-content-center pt-3">
                             <p className="mb-0">Already have account?</p>
-                            <Link href='/signin'><a className="text-blue">Sign In</a></Link>
+                            <Link href='/signin'><a className="text-blue text-decoration-none">Sign In</a></Link>
                         </div>
                     </form>
             </div>

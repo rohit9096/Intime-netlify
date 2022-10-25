@@ -24,20 +24,20 @@ p, span{
   color: #373737;
 }
 h2,h3{
-  font-size: 38px;
+  font-size: 38px !important;
   /* letter-spacing: 1.05px; */
-  line-height: 50px;
-  font-weight: bold;
+  line-height: 50px !important;
+  font-weight: bold !important;
 }
 h5{
-  font-size: 32px;
-  line-height: 44px;
+  font-size: 32px !important;
+  line-height: 44px !important;
 }
 h6{
-  color: #373737;
-  font-size: 26px;
-  line-height: 36px;
-  font-weight: bold;
+  color: #373737 !important;
+  font-size: 26px !important;
+  line-height: 36px !important;
+  font-weight: bold !important;
 }
 
 .underline {
@@ -74,13 +74,13 @@ h6{
   padding: 10px 10px !important;
 }
 .btn-secondary{
-  border-radius: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
+  border-radius: 8px !important;
+  font-size: 16px !important;
+  text-transform: uppercase !important;
 }
 .btn-primary:hover{
-  background-color: #E60000;
-  border: 1px solid #E60000;
+  background-color: #E60000 !important;
+  border: 1px solid #E60000 !important;
 }
 .primary-link{
   color: #E60000 !important;
@@ -101,8 +101,8 @@ h6{
   font-size: 17px;
 }
 .btn-success, .btn-success:hover{
-  background-color: #0095FF;
-  border-color: #0095FF;
+  background-color: #0095FF !important;
+  border-color: #0095FF !important;
 }
 .text-purple{
   color: #794F7E;
@@ -112,32 +112,32 @@ h6{
 /* =============== navigation styling =================== */
 
 .main-navigation{
-  box-shadow: 0px 2px 4px #cecece66;
-  z-index: 999;
+  box-shadow: 0px 2px 4px #cecece66 !important;
+  z-index: 999 !important;
 }
 
 .nav-item a, .btn-primary{
-  font-size: 16px;
-  color: #373737;
-  line-height: 18px;
-  letter-spacing: 0;
-  font-weight: normal;
+  font-size: 16px !important;
+  color: #373737 !important;
+  line-height: 18px !important;
+  letter-spacing: 0 !important;
+  font-weight: normal !important;
 }
 
 /*================ footer styling ====================*/
 
 
 .main-footer, .primary-bg-color{
-  background-color: #094259;
+  background-color: #094259 !important;
 }
 .download-text{
-  font-size: 11px;
+  font-size: 11px !important;
 }
 .h-32{
-  height: 32px;
+  height: 32px !important;
 }
 .h-35{
-  height: 35px;
+  height: 35px !important;
 }
 .social-bg{
   background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
@@ -172,6 +172,39 @@ h6{
 }
 .cta-row{
   height: 240px;
+}
+
+
+/* ============= list css ============= */
+
+  
+.unordered-list ul {
+  list-style: none;
+}
+
+.unordered-list ul > li {
+  clear: left;
+  padding: .5rem 0;
+  color: #373737;
+}
+ 
+.unordered-list ul > li:before {
+  content: "";
+  height: 1.3rem;
+  width: 1.3rem;
+  display: block;
+  float: left;
+  margin-left: -1.5rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+
+.unordered-list ul > li:before { 
+  background: url("./Assets/Home_Assets/check_mark.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 
@@ -280,9 +313,9 @@ h6{
   }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
-    color: #373737;
-    background-color: #E6F3FF;
-    padding: 5px 10px;
+    color: #373737 !important;
+    background-color: #E6F3FF !important;
+    padding: 5px 10px !important;
 }
 .nav-pills .nav-link{
   color: #373737;

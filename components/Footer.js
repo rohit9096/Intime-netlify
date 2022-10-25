@@ -41,16 +41,16 @@ function Footer() {
                 <div className="col-lg-3 col-xs-12 about-company">
                     <p className='footer-subtitle fw-bold mb-3'>Features</p>
                     <ul className="m-0 p-0 list-unstyled">
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Teams Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Clients Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Projects Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Task Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Timesheet Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Employee Monitoring</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Time off Management</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Easy Invoicing</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Productivity & Calculations</a></li>
-                        <li className='mb-3'><a href="#" className='text-white fw-light'>Desktop / Mobile Apps</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Teams Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Clients Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Projects Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Task Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Timesheet Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Employee Monitoring</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Time off Management</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Easy Invoicing</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Productivity & Calculations</a></li>
+                        <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Desktop / Mobile Apps</a></li>
                     </ul>
                 </div>
                 <div className="col-lg-9 col-xs-12 links">
@@ -58,23 +58,23 @@ function Footer() {
                         <div className='col-lg-3'>
                             <p className='footer-subtitle fw-bold mb-3'>Pricing</p>
                             <ul className="m-0 p-0 list-unstyled">
-                                <li className='mb-3'><a href="#" className='text-white fw-light'>Pricing</a></li>
-                                <li className='mb-3'><a href="#" className='text-white fw-light'>Request Demo</a></li>
-                                <li className='mb-3'><a href="#" className='text-white fw-light'>Free Trial</a></li>
+                                <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Pricing</a></li>
+                                <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Request Demo</a></li>
+                                <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Free Trial</a></li>
                             </ul>
                         </div>
                         <div className='col-lg-3'>
                             <p className='footer-subtitle fw-bold mb-3'>About Us</p>
                             <ul className="m-0 p-0 list-unstyled">
-                                <li className='mb-3'><a href="#" className='text-white fw-light'>Company Info</a></li>
-                                <li className='mb-3'><a href="#" className='text-white fw-light'>Customer Feedback</a></li>
+                                <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Company Info</a></li>
+                                <li className='mb-3'><a href="#" className='text-white fw-light text-decoration-none'>Customer Feedback</a></li>
                             </ul>
                         </div>
                         <div className='col-lg-3'>
                             <p className='footer-subtitle fw-bold mb-3'>Support</p>
                             <ul className="m-0 p-0 list-unstyled">
-                                <li className='mb-3'><Link href="/contact" className='text-white fw-light'>Contact Us</Link></li>
-                                <li className='mb-3'><Link href="/faq"><a  className='text-white fw-light'>FAQ`s</a></Link></li>
+                                <li className='mb-3'><Link href="/contact"><a className='text-white fw-light text-decoration-none'> Contact Us</a></Link></li>
+                                <li className='mb-3'><Link href="/faq"><a  className='text-white fw-light text-decoration-none'>FAQ`s</a></Link></li>
                             </ul>
                         </div>
                         <div className='col-lg-3'>

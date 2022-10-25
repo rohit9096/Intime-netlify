@@ -25,7 +25,7 @@ function ComoundYourGrowth() {
                             </ul>
                         </div>
                         <div className='pt-4 d-flex gap-4 align-items-center'>
-                            <a href="#" className='primary-link'>Learn More &gt;&gt;</a>
+                            <a href="#" className='primary-link text-decoration-none'>Learn More &gt;&gt;</a>
                             <a href="#"><button className="btn btn-primary text-white">START OPTIMISING</button></a>
                         </div>
                     </div>       
@@ -68,7 +68,7 @@ function ComoundYourGrowth() {
                             </ul>
                         </div>
                         <div className='pt-4 d-flex gap-4 align-items-center'>
-                            <a href="#" className='primary-link'>Learn More &gt;&gt;</a>
+                            <a href="#" className='primary-link text-decoration-none'>Learn More &gt;&gt;</a>
                             <a href="#"><button className="btn btn-primary text-white">START FREE TRIAL</button></a>
                         </div>
                     </div>       

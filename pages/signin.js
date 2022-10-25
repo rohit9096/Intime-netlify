@@ -44,17 +44,17 @@ function SignIn() {
                                 <label className="form-check-label" htmlFor="exampleCheck1">Remember me</label>
                             </div>
                             <div>
-                                <a href="#" className="primary-link">Forgot password?</a>
+                                <a href="#" className="primary-link text-decoration-none">Forgot password?</a>
                             </div>
                         </div>
                         <button type="submit" className="btn btn-success w-100 text-white">SIGN IN</button>
                         <div className="d-flex gap-2 justify-content-center pt-4">
                             <p className="mb-0">Need an account?</p>
-                            <Link href="./createnewaccount"><a className="text-blue">Join "in time pro" for free</a></Link>
+                            <Link href="./createnewaccount"><a className="text-blue text-decoration-none">Join "in time pro" for free</a></Link>
                         </div>
                         <div className="d-flex gap-2 justify-content-center pt-2">
                             <p className="text-muted">By continuing I agree to</p>
-                            <a href="#" className="text-purple">Terms of Service</a>
+                            <a href="#" className="text-purple text-decoration-none">Terms of Service</a>
                         </div>
                     </form>
             </div>
