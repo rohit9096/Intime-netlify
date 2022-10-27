@@ -82,47 +82,63 @@ function Footer() {
                    </div>
                    <div className='d-flex justify-content-between align-items-center position-relative top-50'>
                         <div className=''>
-                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-3 d-flex align-items-end gap-2 justify-content-center'>
-                                <div className='h-32'>
-                                    <Image src={MicrosoftLogo} alt="Microsoft logo" width={30} height={32} />
-                                </div>
-                                <div>
-                                    <small className='text-muted download-text'>Download on the</small>
-                                    <p className='mb-0 fw-semibold lh-1'>Windows Store</p>
-                                </div>
+                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-3 d-flex align-items-end justify-content-center'>
+                                <Link href='/download-windows'>
+                                    <a className='d-flex align-items-end gap-2'>
+                                        <div className='h-32'>
+                                        <Image src={MicrosoftLogo} alt="Microsoft logo" width={30} height={32} />
+                                        </div>
+                                        <div>
+                                            <small className='text-muted download-text'>Download on the</small>
+                                            <p className='mb-0 fw-semibold lh-1'>Windows Store</p>
+                                        </div>       
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className=''>
-                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-4 d-flex align-items-end gap-2 justify-content-center'>
-                                <div className='ps-1 h-32'>
-                                    <Image src={AppletLogo} alt="Microsoft logo" width={25} height={30} />
-                                </div>
-                                <div className='pe-1'>
-                                    <small className='text-muted download-text'>Download on the</small>
-                                    <p className='mb-0 fw-semibold lh-1'>App Store</p>
-                                </div>
+                            <div className='bg-white shadow download-card rounded pt-1 pb-2 d-flex align-items-end justify-content-center'>
+                                <Link href='/download-macOS'>
+                                    <a className='d-flex align-items-end gap-2'>
+                                        <div className='ps-1 h-32'>
+                                            <Image src={AppletLogo} alt="Microsoft logo" width={25} height={30} />
+                                        </div>
+                                        <div className='pe-1'>
+                                            <small className='text-muted download-text'>Download on the</small>
+                                            <p className='mb-0 fw-semibold lh-1'>App Store</p>
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                         <div className=''>
-                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-4 d-flex align-items-end gap-2 justify-content-center'>
-                                <div className='ps-1'>
-                                    <Image src={GooglePlayLogo} alt="Microsoft logo" width={20} height={20} />
-                                </div>
-                                <div className='pe-1'>
-                                    <small className='text-muted download-text'>Download on the</small>
-                                    <p className='mb-0 fw-semibold lh-1'>Play Store</p>
-                                </div>
+                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-4 d-flex align-items-end justify-content-center'>
+                               <Link href='/download-android'>
+                                <a className='d-flex align-items-end gap-2'>
+                                    <div className='ps-1'>
+                                        <Image src={GooglePlayLogo} alt="Microsoft logo" width={20} height={20} />
+                                    </div>
+                                    <div className='pe-1'>
+                                        <small className='text-muted download-text'>Download on the</small>
+                                        <p className='mb-0 fw-semibold lh-1'>Play Store</p>
+                                    </div>      
+                                </a>
+                               </Link>
                             </div>
                         </div>
                         <div className=''>
-                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-3 d-flex align-items-end gap-2 justify-content-center'>
-                                <div className='ps-1 h-35'>
-                                    <Image src={MobileAppLogo} alt="Microsoft logo" width={20} height={35} />
-                                </div>
-                                <div className='pe-1'>
-                                    <small className='text-muted download-text'>Download on the</small>
-                                    <p className='mb-0 fw-semibold lh-1'>App Store</p>
-                                </div>
+                            <div className='bg-white shadow download-card rounded pt-1 pb-2 px-3 d-flex align-items-end justify-content-center'>
+                                <Link href='/download-iOS'>
+                                    <a className='d-flex align-items-end gap-2'>
+                                        <div className='ps-1 h-35'>
+                                            <Image src={MobileAppLogo} alt="Microsoft logo" width={20} height={35} />
+                                        </div>
+                                        <div className='pe-1'>
+                                            <small className='text-muted download-text'>Download on the</small>
+                                            <p className='mb-0 fw-semibold lh-1'>App Store</p>
+                                        </div>
+                                    </a>
+                                </Link>
                             </div>
                         </div>
                    </div>

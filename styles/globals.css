@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap"');
 
+
 html,
 body {
   padding: 0;
@@ -29,6 +30,9 @@ h2,h3{
   line-height: 50px !important;
   font-weight: bold !important;
 }
+h4{
+  font-size: 30px;
+}
 h5{
   font-size: 32px !important;
   line-height: 44px !important;
@@ -42,6 +46,10 @@ h6{
 
 .underline {
   border-bottom: 3px solid #E60000;
+}
+.download-hr{
+  border-top: 3px solid;
+  opacity: 1;
 }
 
 
@@ -68,7 +76,7 @@ h6{
   background-color: #E60000 !important;
   border-radius: 8px !important;
   font-size: 16px !important;
-  text-transform: uppercase !important;
+  /* text-transform: uppercase; */
   color: #fff !important;
   border: 1px solid #E60000 !important;
   padding: 10px 10px !important;
@@ -93,8 +101,8 @@ h6{
   color: #0095FF !important;
 }
 .btn-primary-outline, .btn-primary-outline:hover{
-  border: 1px solid #E60000;
-  color: #E60000;
+  border: 1px solid #E60000 !important;
+  color: #E60000 !important;
 }
 .blue-title{
   letter-spacing: 0.36px;
@@ -118,7 +126,7 @@ h6{
 
 .nav-item a, .btn-primary{
   font-size: 16px !important;
-  color: #373737 !important;
+  color: #373737;
   line-height: 18px !important;
   letter-spacing: 0 !important;
   font-weight: normal !important;
@@ -201,7 +209,7 @@ h6{
 }
 
 .unordered-list ul > li:before { 
-  background: url('./Assets/Home_Assets/check_mark.png') !important;
+  background: url('https://main--idyllic-brioche-fb2dbe.netlify.app/_next/static/media/check_mark.23093139.png');
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;
@@ -292,7 +300,7 @@ h6{
 .email-login label {
   color: rgb(170 166 166);
 }
-.login-card a, .login-card p, .login-card label, .faq-accordian .accordion-body p{
+.login-card a, .login-card p, .login-card label, .faq-accordian .accordion-body p, .faq-accordian .accordion-body ul li, .faq-accordian .accordion-body ol li{
   font-size: 14px;
 }
 
@@ -350,4 +358,18 @@ h6{
   color: #373737;
   background-color: transparent;
   box-shadow: none;
+}
+
+
+/* ==================== download page css ================= */
+
+.device-card{
+  width: 280px;
+  max-width: 280px;
+}
+.btn-cta, .btn-cta:hover{
+    border: 1px solid #E60000;
+    width: 125px;
+    max-width: 130px;
+    color: #E60000;
 }

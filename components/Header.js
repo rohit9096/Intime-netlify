@@ -33,7 +33,7 @@ function Header() {
                         <a className="nav-link" href="#">Pricing</a>
                     </li>
                     <li className="nav-item">
-                        <a href="#" className="nav-link">FAQ</a>
+                       <Link href="/faq"><a className="nav-link">FAQ</a></Link> 
                     </li>
                     <li className="nav-item">
                         <Link href="/signin" className="nav-link pe-auto"><a className='primary-link text-decoration-none'>SIGN IN</a></Link>

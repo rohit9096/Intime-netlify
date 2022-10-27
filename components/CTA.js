@@ -9,7 +9,7 @@ function CTA() {
                 <div className="row d-flex pt-5 cta-row px-5">
                     <div className="col-lg-8 col-xs-12">
                         <h5 className="text-white pb-4 pt-3">Boosting Productivity was never so easy.</h5>
-                        <button className='bg-white rounded btn btn-secondary text-blue'>START FREE TRIAL</button>
+                        <button className='bg-white rounded btn btn-secondary text-blue border-0'>START FREE TRIAL</button>
                     </div>
                     <div className="col-lg-4 col-xs-12">
                        <div className='position-relative cta-image-div'>
