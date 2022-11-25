@@ -187,6 +187,9 @@ h6{
 .main-footer{
   background-color: #F0F0F0;
 }
+.main-footer li a{
+  color: #212529;
+}
 .download-text{
   font-size: 11px !important;
 }
@@ -806,14 +809,14 @@ section.active {
 /* =================== features section css ====================== */
 
 .features-pill .nav-link{
-  background: #F9FDFF;
-  border: 1px solid #ECF7FF;
-  border-radius: 4px;
+  background: #F9FDFF !important;
+  border: 1px solid #ECF7FF !important;
+  border-radius: 4px !important;
   margin: 0px 0px 10px 0px;
 }
 .features-pill .nav-link.active{
-  background: #F2FAFF 0% 0% no-repeat padding-box;
-  border: 1px solid #D9F0FF;
+  background: #F2FAFF 0% 0% no-repeat padding-box !important;
+  border: 1px solid #D9F0FF !important;
 }
 .feature-icon{
   background: #DEF2FF;
