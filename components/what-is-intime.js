@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import BookDemo from './book-demo';
 import List from './Lists/list';
 import WhatIsIntimeImage from '/styles/Assets/Home_Assets/what-is-intime.svg';
 
@@ -16,7 +17,8 @@ function WhatIsIntime() {
                 </div>
             </div>
             <div className='text-center'>
-                <button className='bg-white rounded btn btn-secondary text-blue'>BOOK DEMO</button>
+                <button className='bg-white rounded btn btn-secondary text-blue' data-bs-toggle="modal" data-bs-target="#staticBackdrop">BOOK DEMO</button>
+                <BookDemo />
             </div>
         </div>
 

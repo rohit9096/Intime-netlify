@@ -1,6 +1,8 @@
 import Image from 'next/image'
 import logo from '/styles/Assets/logo.svg'
 import Link from 'next/link'
+import TrialDemo from './trial-demo';
+import SignIn from './sign-in';
 
 function Header() {
     return (  <>
@@ -15,31 +17,33 @@ function Header() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul className="navbar-nav ms-auto mb-2 mb-lg-0 gap-4 d-flex align-items-center">
-                <li className="nav-item dropdown">
-                    <a className="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                        Features
-                    </a>
-                    <ul className="dropdown-menu">
-                        <li><a className="dropdown-item" href="#">Action</a></li>
-                        <li><a className="dropdown-item" href="#">Another action</a></li>
-                        <li><hr className="dropdown-divider" /></li>
-                        <li><a className="dropdown-item" href="#">Something else here</a></li>
-                    </ul>
+                    <li className="nav-item">
+                    <Link href='/#features' scroll={false}><a className="nav-link">
+                            Features
+                        </a></Link>
                     </li>
                     <li className="nav-item">
-                    <a className="nav-link active" aria-current="page" href="#">Automation</a>
+                        <Link href='/#automation' scroll={false}><a className="nav-link">Automation</a></Link>
                     </li>
                     <li className="nav-item">
-                        <a className="nav-link" href="#">Pricing</a>
+                    <Link href='/#home-price' scroll={false}><a className="nav-link">Pricing</a></Link>
                     </li>
                     <li className="nav-item">
                        <Link href="/faq"><a className="nav-link">FAQ</a></Link> 
                     </li>
                     <li className="nav-item">
-                        <Link href="/signin" className="nav-link pe-auto"><a className='primary-link text-decoration-none'>SIGN IN</a></Link>
+                        <Link href="/signin" className="nav-link pe-auto"><a className='primary-link text-decoration-none'>Sign in</a></Link>
                     </li>
                     <li className="nav-item">
-                        <a href="#"><button className="btn btn-primary text-white">START FREE TRIAL</button></a>
+                        <a href="#"><button className="btn btn-primary text-white rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">START FREE TRIAL</button></a>
+                    </li>
+                    <li className="nav-item">
+                        <select className="form-select border-0" aria-label="Default select example">
+                        <option value="DEFAULT">Lang</option>
+                        <option value="1">Eng (UK)</option>
+                        <option value="2">Eng (US)</option>
+                        <option value="3">African</option>
+                        </select>
                     </li>
                 </ul>
                 </div>

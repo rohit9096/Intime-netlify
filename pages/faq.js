@@ -6,7 +6,9 @@ import Head from 'next/head'
 import Footer from "../components/Footer";
 import CTA from '../components/CTA'
 import MicrosoftLogo from '/styles/Assets/microsoft-store.png'
+import Faqbanner from '/styles/Assets/faq-banner.svg'
 import AppletLogo from '/styles/Assets/Apple.png'
+import BannerImage from '/styles/Assets/Home_Assets/Home-banner.svg'
 import GooglePlayLogo from '/styles/Assets/google-play-store.png'
 import MobileAppLogo from '/styles/Assets/mobile-app.png'
 
@@ -18,22 +20,37 @@ function FAQ() {
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
         </Head>
         <Header />
-    
-        <section className="primary-bg-color py-5">
-            <div className="container text-center pb-5">
-                <h5 className="text-white pt-4 pb-2">Frequently Asked Questions</h5>
-                <p className="text-white w-50 mx-auto px-5 pb-4">Get the most out of In Time Pro and learn everything about our features through these FAQ's</p>
-                <div className="search d-flex gap-3 w-50 mx-auto">
-                    <span><svg className="fa-search" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
-                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
-                    </svg></span>
-                    <input type="text" className="form-control" placeholder="What are you looking for" />
-                    <button className="btn primary-link bg-white border-white px-4">SEARCH</button>
+
+        <div className='container pb-5 mb-3'> 
+            <div className='row py-5 my-4 align-items-center sm-py-0'>
+                <div className='col-lg-5 col-sm-12 mb-4'>
+                    <div className='pb-5'>
+                        <h1 className='fw-bold gradient-one banner-heading mb-0 sm-g-one'>Frequently</h1>
+                        <h2 className='banner-heading mb-0'>Asked</h2>
+                        <h2 className='gradient-two banner-heading mb-0'>Questions</h2>
+                        {/* <p>Tune out distractions by empowering employees for better performance.</p> */}
+                        <p className='text-muted banner-paragraph pt-2'>Get the most out of In Time Pro and learn everything about our features through these FAQ's</p>
+                    </div>
+                    <div className='d-flex gap-3 pe-5 sm-pe-0'>
+                        <div className="input-group mb-3">
+                            <input type="email" className="form-control primary-outline rounded-0" placeholder="What are you looking for ?" aria-label="What are you looking for ?" aria-describedby="button-addon2" />
+                            <button className="btn btn-cta btn-outline-secondary btn-success rounded-0 text-white" type="button" id="button-addon2">Search</button>
+                        </div>
+                    </div>
+                </div>
+                <div className='col-lg-7 col-sm-12 text-end'>
+                    <Image src={Faqbanner} alt="Home Banner" width={600} height={400} />
                 </div>
             </div>
-            <div className="container mt-5 pt-4 bg-white shadow rounded p-4 mb-5 ">
+        </div>
+    
+        <section className="pt-5 sm-py-0">
+            <div className="container text-center">
+                <h5 className="pt-4 pb-5 fw-bold">Categories</h5>
+            </div>
+            <div className="container p-4 mb-5 ">
                 <div className="d-flex align-items-start row">
-                    <div className="nav flex-column nav-pills col-lg-2 col-xs-12 border-end pe-4" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                    <div className="nav flex-column nav-pills features-pill col-lg-2 col-xs-12 pe-4 sm-pe-0 mb-4 pe-md-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button className="nav-link active" id="v-pills-General-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab" aria-controls="v-pills-General" aria-selected="true">General</button>
                         <button className="nav-link" id="v-pills-Started-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Started" type="button" role="tab" aria-controls="v-pills-Started" aria-selected="false">Getting Started</button>
                         <button className="nav-link" id="v-pills-profile-tab" data-bs-toggle="pill" data-bs-target="#v-pills-profile" type="button" role="tab" aria-controls="v-pills-profile" aria-selected="false">Profile</button>
@@ -50,17 +67,17 @@ function FAQ() {
                         <button className="nav-link" id="v-pills-client-tab" data-bs-toggle="pill" data-bs-target="#v-pills-client" type="button" role="tab" aria-controls="v-pills-client" aria-selected="false">Client's</button>
                         <button className="nav-link" id="v-pills-acivities-tab" data-bs-toggle="pill" data-bs-target="#v-pills-acivities" type="button" role="tab" aria-controls="v-pills-acivities" aria-selected="false">Activities</button>
                     </div>
-                    <div className="tab-content col-lg-10 col-xs-12 px-5" id="v-pills-tabContent">
-                        <div className="tab-pane fade show active card shadow border-0 p-4" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab" tabIndex="0">
+                    <div className="tab-content col-lg-10 col-xs-12 px-5 sm-px-0 px-md-0 px-lg-5" id="v-pills-tabContent">
+                        <div className="tab-pane fade show active border-0 card" id="v-pills-general" role="tabpanel" aria-labelledby="v-pills-general-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="headingOne">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                        <span className="ps-3 ms-1 fw-semibold">What is In Time Pro?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is In Time Pro?</span>
                                     </button>
                                     </h2>
                                     <div id="collapseOne" className="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         IN TIME Pro (ITP) is a desktop & cloud and subscription-based product which allows businesses to manage all their key tasks in a single integrated platform. 
                                         </p>
@@ -79,11 +96,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="headingTwo">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                        <span className="ps-3 ms-1 fw-semibold">How much does ITP cost?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How much does ITP cost?</span>
                                     </button>
                                     </h2>
                                     <div id="collapseTwo" className="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             ITP is free to try for 14 days (about 2 weeks), pricing starts from $5/mo./user and can go as high as $10/mo./user for the Enterprise version. 
                                         </p>
@@ -93,11 +110,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="headingThree">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                        <span className="ps-3 ms-1 fw-semibold">How can I subscribe to ITP?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How can I subscribe to ITP?</span>
                                     </button>
                                     </h2>
                                     <div id="collapseThree" className="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         On the ITP website, click on “Add payment method,” choose the payment type - Credit card or bank transfer, enter billing details and click on “Save payment method.” The selected payment method will be automatically charged each billing cycle. 
                                         </p>
@@ -107,11 +124,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="h4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#c4" aria-expanded="false" aria-controls="c4">
-                                        <span className="ps-3 ms-1 fw-semibold">What is the difference between monthly & annual billing?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is the difference between monthly & annual billing?</span>
                                     </button>
                                     </h2>
                                     <div id="c4" className="accordion-collapse collapse" aria-labelledby="h4" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             The monthly billing plan charges your payment method on the first day of the month. The annual payment method charges once a year on the date when the plan was started. The annual subscription comes with a discounted rate, depending on the number of users that will use the platform. 
                                         </p>
@@ -121,11 +138,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="h5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#c5" aria-expanded="false" aria-controls="c5">
-                                        <span className="ps-3 ms-1 fw-semibold">How can I add or remove users from my plan?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How can I add or remove users from my plan?</span>
                                     </button>
                                     </h2>
                                     <div id="c5" className="accordion-collapse collapse" aria-labelledby="h5" data-bs-parent="#accordionExample">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             To add or remove users from your plan, click on the “Settings” icon in the top right corner of the website, then select “Manage Users,” to add a user, click on “Invite User” option to invite user to register. Similarly, search for users you want to delete by clicking on “Filter by Role” option and click on the “delete” icon.
                                         </p>
@@ -134,16 +151,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-Started" role="tabpanel" aria-labelledby="v-pills-Started-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-Started" role="tabpanel" aria-labelledby="v-pills-Started-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample2">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cga1" aria-expanded="true" aria-controls="cga1">
-                                        <span className="ps-3 ms-1 fw-semibold">How can I go about setting up an account:</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How can I go about setting up an account:</span>
                                     </button>
                                     </h2>
                                     <div id="cga1" className="accordion-collapse collapse show" aria-labelledby="hga1" data-bs-parent="#accordionExample2">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             When you sign up for In Time Pros, you will get a 30-day trial to try out all its features. To sign up, follow the steps below:  
                                         </p>
@@ -153,7 +170,7 @@ function FAQ() {
                                             <div>
                                             <ol>
                                                 <li>Go to the signup page </li> 
-                                                  <li>Enter a valid email </li>
+                                                <li>Enter a valid email </li>
                                                 <li>Next, add a Password (minimum of 8 characters or more) </li>
                                                 <li> Click on Get Started and you will be asked a few questions about your business before you can start exploring your account.  
                                                 </li>
@@ -178,11 +195,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cga2" aria-expanded="false" aria-controls="cga2">
-                                        <span className="ps-3 ms-1 fw-semibold">Do I have to download an executable file to access ITP on my desktop?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">Do I have to download an executable file to access ITP on my desktop?</span>
                                     </button>
                                     </h2>
                                     <div id="cga2" className="accordion-collapse collapse" aria-labelledby="hga2" data-bs-parent="#accordionExample2">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms- pb-2 pt-0">
                                         <p className="mb-0">
                                             Yes, once you install the executable file, you will be able to start using ITP. This allows you to automatically track your clock in & clock out timings. It also tracks employee’s productivity, apps, and screenshots throughout their work hours. It also tracks the employees’ tasks even when they do not have internet access.  
                                         </p>
@@ -192,11 +209,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hga3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cga3" aria-expanded="false" aria-controls="cga3">
-                                        <span className="ps-3 ms-1 fw-semibold">What are the Product Features available when I subscribe? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are the Product Features available when I subscribe? </span>
                                     </button>
                                     </h2>
                                     <div id="cga3" className="accordion-collapse collapse" aria-labelledby="hga3" data-bs-parent="#accordionExample2">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <div>
                                         <ol>
                                         <li> Teams / Users management</li>
@@ -220,11 +237,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hga4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cga4" aria-expanded="false" aria-controls="cga4">
-                                        <span className="ps-3 ms-1 fw-semibold">How can I set up Team & User Management? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How can I set up Team & User Management? </span>
                                     </button>
                                     </h2>
                                     <div id="cga4" className="accordion-collapse collapse" aria-labelledby="hga4" data-bs-parent="#accordionExample2">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <div className="mb-0">
                                             <ol>
                                                 <li>ITP allows you to create and manage multiple organization units' hierarchy under a single administrator account. </li>
@@ -239,11 +256,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hga5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cga5" aria-expanded="false" aria-controls="cga5">
-                                        <span className="ps-3 ms-1 fw-semibold">Will I be able to invite and manage users? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">Will I be able to invite and manage users? </span>
                                     </button>
                                     </h2>
                                     <div id="cga5" className="accordion-collapse collapse" aria-labelledby="hga5" data-bs-parent="#accordionExample2">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             There is one way to send invitations for your employees to join ITP app:  
                                         </p>
@@ -260,16 +277,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample3">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="pga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccga1" aria-expanded="true" aria-controls="ccga1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “My Profile”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “My Profile”? </span>
                                     </button>
                                     </h2>
                                     <div id="ccga1" className="accordion-collapse collapse show" aria-labelledby="pga1" data-bs-parent="#accordionExample3">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         My Profile is the user's personal information, where the user can see their login information which is used to access their pro account. 
                                         </p>
@@ -279,11 +296,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="pga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccga2" aria-expanded="false" aria-controls="ccga2">
-                                        <span className="ps-3 ms-1 fw-semibold">What are the features of “My Profile”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are the features of “My Profile”? </span>
                                     </button>
                                     </h2>
                                     <div id="ccga2" className="accordion-collapse collapse" aria-labelledby="pga2" data-bs-parent="#accordionExample3">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <div>
                                             <ul>
                                                 <li>Users can edit their First Name, Last Name and Profile Picture. </li>
@@ -298,16 +315,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-company-profile" role="tabpanel" aria-labelledby="v-pills-company-profile-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-company-profile" role="tabpanel" aria-labelledby="v-pills-company-profile-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample4">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ppga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga1" aria-expanded="true" aria-controls="ccpga1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Company Profile”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Company Profile”?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga1" className="accordion-collapse collapse show" aria-labelledby="ppga1" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             The “Company Profile” contains key details about your business that are displayed on all your Invoices. This is also where you can choose your Base Currency, Date Format and you can set your report settings as needed. You can add public holidays and various locations of your office including settings of employee activities tracking. 
                                         </p>
@@ -317,11 +334,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga8">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga8" aria-expanded="false" aria-controls="ccpga8">
-                                        <span className="ps-3 ms-1 fw-semibold">What are the features of “My Profile”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are the features of “My Profile”? </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga8" className="accordion-collapse collapse" aria-labelledby="cpga8" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <div>
                                             <ul>
                                                 <li>Users can edit their First Name, Last Name and Profile Picture. </li>
@@ -337,11 +354,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga2" aria-expanded="false" aria-controls="ccpga2">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Company Details”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Company Details”?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga2" className="accordion-collapse collapse" aria-labelledby="cpga2" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">This is where you can add or edit your organization details like: </p>
                                         <p className="mb-0">
                                         <p className="mb-0">•	Organization Name: Name of the organization, it will prepopulate from on boarding process and can be editable. </p>
@@ -363,11 +380,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga3" aria-expanded="false" aria-controls="ccpga3">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Location”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Location”?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga3" className="accordion-collapse collapse" aria-labelledby="cpga3" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p>
                                         Locations are the different offices located in different cities or countries. The default organization location is displayed on top with address details. 
                                         You can add a new location by clicking on “Add Group” button. The right panel will open to add details of the location. Added location will display on locations list. 
@@ -382,11 +399,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga4" aria-expanded="false" aria-controls="ccpga4">
-                                        <span className="ps-3 ms-1 fw-semibold">How do add “Working Days”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How do add “Working Days”? </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga4" className="accordion-collapse collapse" aria-labelledby="cpga4" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p>
                                         You can select the location from the Location dropdown and add working and tracking days settings for the users under the selected location. 
                                         </p>
@@ -403,11 +420,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga5" aria-expanded="false" aria-controls="ccpga5">
-                                        <span className="ps-3 ms-1 fw-semibold">How to set up “Tracking Days”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to set up “Tracking Days”?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga5" className="accordion-collapse collapse" aria-labelledby="cpga5" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p>
                                         Tracking Days are the days when you want to track the activities of your employees by giving a start time and end time. The agent app will track the activities of employee machines based on these settings. 
                                         </p>
@@ -421,11 +438,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga6">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga6" aria-expanded="false" aria-controls="ccpga6">
-                                        <span className="ps-3 ms-1 fw-semibold">How to add “Public Holidays”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to add “Public Holidays”?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga6" className="accordion-collapse collapse" aria-labelledby="cpga6" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p>
                                         You can add Public Holidays for multiple locations by clicking the “Add Holiday” button. It will open a right-side panel to add details of the holiday(s). 
                                         </p>
@@ -435,11 +452,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga7">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga7" aria-expanded="false" aria-controls="ccpga7">
-                                        <span className="ps-3 ms-1 fw-semibold">How to add holiday?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to add holiday?  </span>
                                     </button>
                                     </h2>
                                     <div id="ccpga7" className="accordion-collapse collapse" aria-labelledby="cpga7" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0">•	Click on “Add Holiday” button </p>
                                        <p className="mb-0">•	Select Holiday Date </p>
                                        <p className="mb-0">•	Enter a Holiday Name </p>
@@ -454,11 +471,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga9">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ccpga9" aria-expanded="false" aria-controls="ccpga9">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Capture Setting” and how do I set it up?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Capture Setting” and how do I set it up?</span>
                                     </button>
                                     </h2>
                                     <div id="ccpga9" className="accordion-collapse collapse" aria-labelledby="cpga9" data-bs-parent="#accordionExample4">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">You can setup your employee activity capture settings from the capture settings menu. Where you can set up screen capture and tracking settings. </p>
                                         <p className="mb-0 fw-semibold">Screenshots: </p>
                                         <p className="mb-0">From this section you can enable Screen Capture functionality: </p>
@@ -481,16 +498,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-organization-unit" role="tabpanel" aria-labelledby="v-pills-organization-unit-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-organization-unit" role="tabpanel" aria-labelledby="v-pills-organization-unit-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample5">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ouga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#oga1" aria-expanded="true" aria-controls="oga1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Organization Unit”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Organization Unit”? </span>
                                     </button>
                                     </h2>
                                     <div id="oga1" className="accordion-collapse collapse show" aria-labelledby="ouga1" data-bs-parent="#accordionExample5">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         After setting up the company profile, the Admin needs to add organization units. The organization unit has an employee and a department tree view. The organization unit is useful for a user to understand the overall hierarchical structure of units. They can also quickly see employees associated with which unit. 
                                         </p>                             
@@ -500,11 +517,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ouga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#oga2" aria-expanded="false" aria-controls="oga2">
-                                        <span className="ps-3 ms-1 fw-semibold">How to add “Root Unit” & “Sub-Units”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to add “Root Unit” & “Sub-Units”? </span>
                                     </button>
                                     </h2>
                                     <div id="oga2" className="accordion-collapse collapse" aria-labelledby="ouga2" data-bs-parent="#accordionExample5">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Users can add Organization Units from Settings &gt; &gt; Organization Unit.
                                         </p>
@@ -527,11 +544,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ouga3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#oga3" aria-expanded="false" aria-controls="oga3">
-                                        <span className="ps-3 ms-1 fw-semibold">How to add user to “Organization Unit”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to add user to “Organization Unit”?  </span>
                                     </button>
                                     </h2>
                                     <div id="oga3" className="accordion-collapse collapse" aria-labelledby="ouga3" data-bs-parent="#accordionExample5">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">The Admin can add a user by clicking on the unit and from right side panel click on “Add Users” button. </p>
                                         <p className="mb-0">Once clicked, the panel will open a list of all existing users in the organization.</p>
                                         <p className="mb-0">If the list is blank, then admin needs to invite the users first. </p>
@@ -543,11 +560,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ouga4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#oga4" aria-expanded="false" aria-controls="oga4">
-                                        <span className="ps-3 ms-1 fw-semibold">How to edit “Organization Unit”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to edit “Organization Unit”? </span>
                                     </button>
                                     </h2>
                                     <div id="oga4" className="accordion-collapse collapse" aria-labelledby="ouga4" data-bs-parent="#accordionExample5">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Users can click on three dots present on unit and click on edit unit option. 
                                         </p>
@@ -560,11 +577,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="ouga5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#oga5" aria-expanded="false" aria-controls="oga5">
-                                        <span className="ps-3 ms-1 fw-semibold">How to delete “Organization Unit”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to delete “Organization Unit”? </span>
                                     </button>
                                     </h2>
                                     <div id="oga5" className="accordion-collapse collapse" aria-labelledby="ouga5" data-bs-parent="#accordionExample5">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             User can delete the Organization Unit by clicking on three dots.   
                                         </p>
@@ -576,16 +593,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-agent-app" role="tabpanel" aria-labelledby="v-pills-agent-app-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-agent-app" role="tabpanel" aria-labelledby="v-pills-agent-app-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample6">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="apga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#capga1" aria-expanded="true" aria-controls="capga1">
-                                        <span className="ps-3 ms-1 fw-semibold">How do “Download Agent App”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How do “Download Agent App”? </span>
                                     </button>
                                     </h2>
                                     <div id="capga1" className="accordion-collapse collapse show" aria-labelledby="apga1" data-bs-parent="#accordionExample6">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             In Time Pro has agent application implemented for Windows and Mac operating systems. Users can download the Agent App from Download option present on Header section. Once the application is downloaded and installed, users can login with their credentials. 
                                         </p>
@@ -595,11 +612,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="cpga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#capga2" aria-expanded="false" aria-controls="capga2">
-                                        <span className="ps-3 ms-1 fw-semibold">What are the features tracked by “Agent App”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are the features tracked by “Agent App”? </span>
                                     </button>
                                     </h2>
                                     <div id="capga2" className="accordion-collapse collapse" aria-labelledby="cpga2" data-bs-parent="#accordionExample6">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">•	Tracks the Applications and Websites used by user and the time spent on each application. </p>
                                         <p className="mb-0">•	Captures Screenshots based on screen capture time set on company profile. </p>
                                         <p className="mb-0">•	Captures Blur Screenshots. </p>
@@ -612,16 +629,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-time-off" role="tabpanel" aria-labelledby="v-pills-time-off-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-time-off" role="tabpanel" aria-labelledby="v-pills-time-off-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample7">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htoga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctoga1" aria-expanded="true" aria-controls="ctoga1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Time Off”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Time Off”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctoga1" className="accordion-collapse collapse show" aria-labelledby="htoga1" data-bs-parent="#accordionExample7">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Managing leave is a crucial part of HR routine and time consuming. in time pro Time Off is a simple and user-friendly online leave management module that helps you to record, manage and keep track of your employees' leave/ time off details effectively with minimum time. 
                                         </p>
@@ -631,11 +648,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htoga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctoga2" aria-expanded="false" aria-controls="ctoga2">
-                                        <span className="ps-3 ms-1 fw-semibold">How do add “Away Time”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How do add “Away Time”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctoga2" className="accordion-collapse collapse" aria-labelledby="htoga2" data-bs-parent="#accordionExample7">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">You can add your away time from my time off section by clicking on “Add away time.” Away time can be added by the employee to apply for a leave. OR manager can also add the away time for any employee of the organization, it can be business trip/conference. </p>
                                         <p className="mb-0">•	Select Team and Member </p>
                                         <p className="mb-0">•	Select from date and to date </p>
@@ -649,11 +666,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htoga3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctoga3" aria-expanded="false" aria-controls="ctoga3">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “My Time Off”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “My Time Off”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctoga3" className="accordion-collapse collapse" aria-labelledby="htoga3" data-bs-parent="#accordionExample7">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                              Added away time will display in my time off list. Here you can filter the away time by “away time type and status” to see if the away time approved, rejected or pending. Users can export the list to pdf or excel. You can sort the records by selecting Newest on Top or Oldest on Top. On top of the list, you can see Available Balance of Leaves, Currently Booked Leaves, Balance After Booked, Estimated Balance. 
                                         </p>
@@ -663,11 +680,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htoga4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctoga4" aria-expanded="false" aria-controls="ctoga4">
-                                        <span className="ps-3 ms-1 fw-semibold">What is a “Calendar”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is a “Calendar”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctoga4" className="accordion-collapse collapse" aria-labelledby="htoga4" data-bs-parent="#accordionExample7">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             This tab represents the calendar view of all added away time by the employees. You can see the calendar in Monthly/Weekly and Daily view. Each Away time type represents with the color on calendar. If you click on any added away time, you can see the details on right side panel. The filter option is present to filter out data by Reporting location of the user, filter “By Project,” filter “By User.” Search option is used to search by entering any keyword. 
                                         </p>
@@ -677,11 +694,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htoga5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctoga5" aria-expanded="false" aria-controls="ctoga5">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Approvals”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Approvals”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctoga5" className="accordion-collapse collapse" aria-labelledby="htoga5" data-bs-parent="#accordionExample7">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         From this section the Admin or the Approver can see the requests received for Leaves from the users. Approver can click on any record from this list and can approve or reject the request. Approver can also perform approve or reject action on multiple leave requests by selecting the checkbox on the list. 
                                         </p>
@@ -690,16 +707,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-services" role="tabpanel" aria-labelledby="v-pills-services-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample8">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hsoga1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#csoga1" aria-expanded="true" aria-controls="csoga1">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Products”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Products”? </span>
                                     </button>
                                     </h2>
                                     <div id="csoga1" className="accordion-collapse collapse show" aria-labelledby="hsoga1" data-bs-parent="#accordionExample8">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Products are used when you are billing for products sold to your client under any project. You can add taxes to your products so that they are automatically added whenever the product is added to an Invoice. 
                                         </p>
@@ -709,11 +726,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hsoga2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#csoga2" aria-expanded="false" aria-controls="csoga2">
-                                        <span className="ps-3 ms-1 fw-semibold">How to create “New Product”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to create “New Product”? </span>
                                     </button>
                                     </h2>
                                     <div id="csoga2" className="accordion-collapse collapse" aria-labelledby="hsoga2" data-bs-parent="#accordionExample8">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">•	Click on the gear icon in the top left corner. </p>
                                         <p className="mb-0">•	Click on the Products and Services menu </p>
                                         <p className="mb-0">•	From Products tab click on “Add Product” </p>
@@ -729,11 +746,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hsoga3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#csoga3" aria-expanded="false" aria-controls="csoga3">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Services”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Services”? </span>
                                     </button>
                                     </h2>
                                     <div id="csoga3" className="accordion-collapse collapse" aria-labelledby="hsoga3" data-bs-parent="#accordionExample8">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Services are used under the project where clients get billed for provided services. You can bill an hourly or flat rate for the work you are doing. Different services can be used while tracking time, so your clients know exactly what you are billing them for. You can also see where your time is going so you can estimate and bill for Projects more accurately. 
                                         </p>
@@ -743,11 +760,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hsoga4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#csoga4" aria-expanded="false" aria-controls="csoga4">
-                                        <span className="ps-3 ms-1 fw-semibold">How to create a new “Service”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to create a new “Service”? </span>
                                     </button>
                                     </h2>
                                     <div id="csoga4" className="accordion-collapse collapse" aria-labelledby="hsoga4" data-bs-parent="#accordionExample8">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">To create a new Service, follow below steps: </p>
                                         <p className="mb-0">•	Click on the gear icon in the top left corner </p>
                                         <p className="mb-0">•	Click on Products & Services menu </p>
@@ -765,11 +782,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hsoga5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#csoga5" aria-expanded="false" aria-controls="csoga5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Archived/Deleted Products & Services List”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Archived/Deleted Products & Services List”? </span>
                                     </button>
                                     </h2>
                                     <div id="csoga5" className="accordion-collapse collapse" aria-labelledby="hsoga5" data-bs-parent="#accordionExample8">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0 fw-semibold">
                                             Archived List: 
                                         </p>
@@ -793,16 +810,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-projects" role="tabpanel" aria-labelledby="v-pills-projects-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample9">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hp1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chp1" aria-expanded="true" aria-controls="chp1">
-                                        <span className="ps-3 ms-1 fw-semibold">What are Projects? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are Projects? </span>
                                     </button>
                                     </h2>
                                     <div id="chp1" className="accordion-collapse collapse show" aria-labelledby="hp1" data-bs-parent="#accordionExample9">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                          Projects are created for clients where the organization offers different services under that project and client get invoiced for those services. Users can review all time tracked by team members as well as see all invoices and timesheets associated with a specific Project. 
                                         </p>
@@ -826,11 +843,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hp2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chp2" aria-expanded="false" aria-controls="chp2">
-                                        <span className="ps-3 ms-1 fw-semibold">How to “Add Project”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to “Add Project”? </span>
                                     </button>
                                     </h2>
                                     <div id="chp2" className="accordion-collapse collapse" aria-labelledby="hp2" data-bs-parent="#accordionExample9">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">You can add new projects by opting for the Flat rate project or hourly project option. </p>
                                         <p className="mb-0">Flat Rate Project: Select this option to start a project and charge a flat rate. </p>
                                         <p className="mb-0">Hourly Project: Select this option to start project and charge hourly rates for tasks done on the project. </p>
@@ -840,11 +857,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hp3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chp3" aria-expanded="false" aria-controls="chp3">
-                                        <span className="ps-3 ms-1 fw-semibold">Add new project screen: </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">Add new project screen: </span>
                                     </button>
                                     </h2>
                                     <div id="chp3" className="accordion-collapse collapse" aria-labelledby="hp3" data-bs-parent="#accordionExample9">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0">•	Enter Project Name, Description, And Image (Logo of the project) </p>
                                        <p className="mb-0">•	Select Client </p>
                                        <p className="mb-0">•	Add Project Duration, Flat Rate, Start Date, End Date, Billability</p>
@@ -862,11 +879,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hp4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chp4" aria-expanded="false" aria-controls="chp4">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Project Details”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Project Details”? </span>
                                     </button>
                                     </h2>
                                     <div id="chp4" className="accordion-collapse collapse" aria-labelledby="hp4" data-bs-parent="#accordionExample9">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Any Project's details can be viewed by going to the Projects section and clicking on any Project. </p>
                                         <p className="mb-0"> Header sections has project details: Project Logo, Project Name, Billability Status, Client Details, Project Services, Start Date, End Date, Project Creation Date Progress Bar, Project Manager, Program Manager, Created By, Count of Team Members, Tasks Count, How Many Days Due. </p>
@@ -884,11 +901,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hp5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chp5" aria-expanded="false" aria-controls="chp5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Archived/Deleted Project List”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Archived/Deleted Project List”? </span>
                                     </button>
                                     </h2>
                                     <div id="chp5" className="accordion-collapse collapse" aria-labelledby="hp5" data-bs-parent="#accordionExample9">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0 fw-semibold">
                                          Archived Project List: 
                                         </p>
@@ -912,16 +929,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-productivity" role="tabpanel" aria-labelledby="v-pills-productivity-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-productivity" role="tabpanel" aria-labelledby="v-pills-productivity-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample10">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hprod1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chprod1" aria-expanded="true" aria-controls="chprod1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “App Productivity”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “App Productivity”? </span>
                                     </button>
                                     </h2>
                                     <div id="chprod1" className="accordion-collapse collapse show" aria-labelledby="hprod1" data-bs-parent="#accordionExample10">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             App Productivity is where you can categories applications used by employees. You can create, edit, or delete any category. Applications used by employees and tracked by agent application are displayed in neutral state, you can move it to productive or unproductive state based on your preference. 
                                         </p>
@@ -931,11 +948,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hprod2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chprod2" aria-expanded="false" aria-controls="chprod2">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Categories”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Categories”? </span>
                                     </button>
                                     </h2>
                                     <div id="chprod2" className="accordion-collapse collapse" aria-labelledby="hprod2" data-bs-parent="#accordionExample10">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             There are six categories defined by in time pro, which cannot be edited or deleted. You can only add or remove applications from these categories.   
                                         </p>
@@ -955,11 +972,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hprod3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chprod3" aria-expanded="false" aria-controls="chprod3">
-                                        <span className="ps-3 ms-1 fw-semibold"> What is “Productivity Definition”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5"> What is “Productivity Definition”?  </span>
                                     </button>
                                     </h2>
                                     <div id="chprod3" className="accordion-collapse collapse" aria-labelledby="hprod3" data-bs-parent="#accordionExample10">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         This is where you can see used applications and websites of the employees in neutral state. You can differentiate the applications by selecting category from left side. 
                                         Productivity definition is where you can define these used applications as productive or unproductive. Based on this application definition productivity bar displays data in time and attendance page of activities module. 
@@ -971,11 +988,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hprod4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chprod4" aria-expanded="false" aria-controls="chprod4">
-                                        <span className="ps-3 ms-1 fw-semibold">How to define the application as productive or unproductive?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to define the application as productive or unproductive?  </span>
                                     </button>
                                     </h2>
                                     <div id="chprod4" className="accordion-collapse collapse" aria-labelledby="hprod4" data-bs-parent="#accordionExample10">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                              •	From neutral tab, select the application from checkbox and click on “Move to Productive” or “Move to Unproductive” based on your preference. 
                                         </p>
@@ -1003,11 +1020,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="hprod5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chprod5" aria-expanded="false" aria-controls="chprod5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Productivity Calculation”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Productivity Calculation”? </span>
                                     </button>
                                     </h2>
                                     <div id="chprod5" className="accordion-collapse collapse" aria-labelledby="hprod5" data-bs-parent="#accordionExample10">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             You can create a custom formula for the calculation of employees’ productivity. The productivity score will be calculated as a ratio of the sum of activities that you consider productive or neutral and employees active time, office time.  
                                         </p>
@@ -1019,16 +1036,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-tracking" role="tabpanel" aria-labelledby="v-pills-tracking-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-tracking" role="tabpanel" aria-labelledby="v-pills-tracking-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample11">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htt1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chtt1" aria-expanded="true" aria-controls="chtt1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Time Tracking”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Time Tracking”? </span>
                                     </button>
                                     </h2>
                                     <div id="chtt1" className="accordion-collapse collapse show" aria-labelledby="htt1" data-bs-parent="#accordionExample11">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Time tracking feature boosts your team productivity and increases transparency even with remote working between team members, projects managers, accounting, and management. It calculates the time spent on each task by tracking the time with a timer. This tracked time of the task gets added to timesheets while submission of timesheets. 
                                         </p>
@@ -1038,11 +1055,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htt2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chtt2" aria-expanded="false" aria-controls="chtt2">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Team Tasks”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Team Tasks”? </span>
                                     </button>
                                     </h2>
                                     <div id="chtt2" className="accordion-collapse collapse" aria-labelledby="htt2" data-bs-parent="#accordionExample11">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         This is where you can add, view, and manage the tasks for your team members. Go to Time Tracking &gt;&gt; Team Tasks and click on “Add New Task” button. A new tab will open to add new tasks. 
                                         </p>
@@ -1067,11 +1084,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htt3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chtt3" aria-expanded="false" aria-controls="chtt3">
-                                        <span className="ps-3 ms-1 fw-semibold">How to “Import Tasks”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to “Import Tasks”? </span>
                                     </button>
                                     </h2>
                                     <div id="chtt3" className="accordion-collapse collapse" aria-labelledby="htt3" data-bs-parent="#accordionExample11">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             If you are looking to save time from adding each new task one by one manually, you can import your list of tasks in bulk instead. 
                                         </p>
@@ -1088,11 +1105,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htt4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chtt4" aria-expanded="false" aria-controls="chtt4">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “My Tasks”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “My Tasks”? </span>
                                     </button>
                                     </h2>
                                     <div id="chtt4" className="accordion-collapse collapse" aria-labelledby="htt4" data-bs-parent="#accordionExample11">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         Each user can see the tasks assigned to them in my tasks tab. It is where the user can track the time of the task by timer. 
                                         </p>
@@ -1119,11 +1136,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="htt5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#chtt5" aria-expanded="false" aria-controls="chtt5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “My Calendar”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “My Calendar”? </span>
                                     </button>
                                     </h2>
                                     <div id="chtt5" className="accordion-collapse collapse" aria-labelledby="htt5" data-bs-parent="#accordionExample11">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         My Calendar is where the task is represented in calendar view. Users can view tasks on calendar based on the task status, user can select daily, weekly, and monthly view on calendar. 
                                         </p>
@@ -1135,16 +1152,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-timesheet" role="tabpanel" aria-labelledby="v-pills-timesheet-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-timesheet" role="tabpanel" aria-labelledby="v-pills-timesheet-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample12">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime1" aria-expanded="true" aria-controls="ctime1">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Timesheets”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Timesheets”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime1" className="accordion-collapse collapse show" aria-labelledby="time1" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0">Timesheet is a simple and efficient time management module that allows you to record and keep track of the time you spend working on various tasks. </p>
                                        <p className="mb-0">You can record your daily, weekly, and monthly time logs to submit timesheets, configure multi-level approval for timesheets, generate bills by sending timesheets and can get customized accurate reports for timesheets. With this intuitive time tracking tool, you can track your employees' time regularly and manage your business productivity without any hassles. </p>
                                        <p className="mb-0">The normal workflow behind Timesheet is that time should be logged for tasks under Projects, for Clients. Those Time Logs are then collated into Timesheets and sent for approval to be approved and for the billing processes to follow. </p>
@@ -1154,11 +1171,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime2" aria-expanded="false" aria-controls="ctime2">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Projects”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Projects”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime2" className="accordion-collapse collapse" aria-labelledby="time2" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         A Timesheet is a collection of more than one-time logs of tasks. You can submit your timesheet from the projects tab. Projects you are aligned to are presented in the projects tab. You can select any project for which you want to submit your timesheet. 
                                          </p>
@@ -1171,11 +1188,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime3" aria-expanded="false" aria-controls="ctime3">
-                                        <span className="ps-3 ms-1 fw-semibold">How to submit a “Timesheet”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to submit a “Timesheet”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime3" className="accordion-collapse collapse" aria-labelledby="time3" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0 fw-semibold">Follow the steps below to submit a timesheet: </p>
                                        <p className="mb-0">•	Go to Project tab &gt;&gt; Select the Project </p>
                                        <p className="mb-0">•	You will see a tasks list for which time is tracked from time tracking module (time will automatically display for the task from time tracking module) </p>
@@ -1206,11 +1223,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime4" aria-expanded="false" aria-controls="ctime4">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “My Timesheets”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “My Timesheets”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime4" className="accordion-collapse collapse" aria-labelledby="time4" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         You can see your submitted timesheets in my timesheet tab with the status of timesheets. You can click on any timesheet to view the details, also you can comment on your submitted timesheets. The submitted timesheets are not editable to the user unless they are rejected by the level of approver. 
                                         You can filter your timesheet list by project and by status. Export option is used to export the timesheets to pdf and excel file. 
@@ -1222,11 +1239,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime5" aria-expanded="false" aria-controls="ctime5">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Timesheet Approvals”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Timesheet Approvals”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime5" className="accordion-collapse collapse" aria-labelledby="time5" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         If you are part of the level of timesheet approver for any project, you can see the Timesheet Approvals tab. This is where you can approve or reject the timesheets of your team members. You can filter the timesheets by Project Name, Employee Name and Status. Export is used to export the timesheet to pdf and excel file. You can click on any timesheet from the list to see the detailed timesheet submitted by team member and act on the timesheet like approve or reject. 
                                         You can add comments on task level and on timesheet level. 
@@ -1246,11 +1263,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="time6">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#ctime6" aria-expanded="false" aria-controls="ctime6">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Summary”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Summary”? </span>
                                     </button>
                                     </h2>
                                     <div id="ctime6" className="accordion-collapse collapse" aria-labelledby="time6" data-bs-parent="#accordionExample12">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         This is the summary view of timesheets presented in project card view. You can click on any project card to see the timesheets submitted under the project. When you click on any project, a new tab will open which will have Project details like Start Date, End Date, Team Members, Total Leaves applied by team members, Total Logged Hours, Total Billed Hours, and Name of next level approver. 
                                         This option provides the list view, where you can see timesheets by date with the members who have not submitted their timesheets, members who have submitted their timesheets, and whose timesheets are approved. 
@@ -1273,16 +1290,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-users" role="tabpanel" aria-labelledby="v-pills-users-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-users" role="tabpanel" aria-labelledby="v-pills-users-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample13">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="user1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cuser1" aria-expanded="true" aria-controls="cuser1">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Manage Users”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Manage Users”? </span>
                                     </button>
                                     </h2>
                                     <div id="cuser1" className="accordion-collapse collapse show" aria-labelledby="user1" data-bs-parent="#accordionExample13">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             This is the section where you invite, edit, and delete your users. You can change the permissions and role provided to the user. Each user has different settings present on the user details page where you can see personal information and set up the track settings. 
                                         </p>
@@ -1292,11 +1309,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="user2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cuser2" aria-expanded="false" aria-controls="cuser2">
-                                        <span className="ps-3 ms-1 fw-semibold">How do I invite a “User”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How do I invite a “User”? </span>
                                     </button>
                                     </h2>
                                     <div id="cuser2" className="accordion-collapse collapse" aria-labelledby="user2" data-bs-parent="#accordionExample13">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">As an Owner, working with others in in time pro is as easy as inviting them to join your account. Keep productivity and collaboration going by inviting your team members. Invite the user as either an Admin, Employee, Contractor, Program Manager, Project Manager, or an Accountant. </p>
                                         <p className="mb-0 fw-semibold">Send an Invite: </p>
                                         <p className="mb-0">•	Click on Settings &gt;&gt; Manage Users </p>
@@ -1318,11 +1335,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="user3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cuser3" aria-expanded="false" aria-controls="cuser3">
-                                        <span className="ps-3 ms-1 fw-semibold">How to “Import Users”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to “Import Users”?  </span>
                                     </button>
                                     </h2>
                                     <div id="cuser3" className="accordion-collapse collapse" aria-labelledby="user3" data-bs-parent="#accordionExample13">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">If you are looking to save time from adding each new member one by one manually, you can import your list of members in bulk instead. </p>
                                         <p className="mb-0 fw-medium">Users can import team members to in time pro by following below steps: </p>
                                         <p className="mb-0">•	Click on “Import User” from users list </p>
@@ -1342,11 +1359,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="user4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cuser4" aria-expanded="false" aria-controls="cuser4">
-                                        <span className="ps-3 ms-1 fw-semibold">How to edit “User Details”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to edit “User Details”?  </span>
                                     </button>
                                     </h2>
                                     <div id="cuser4" className="accordion-collapse collapse" aria-labelledby="user4" data-bs-parent="#accordionExample13">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             You can edit the data of any user by clicking on action option from active users list. 
                                         </p>
@@ -1363,11 +1380,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="user5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cuser5" aria-expanded="false" aria-controls="cuser5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Archived/Deleted Manage User List”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Archived/Deleted Manage User List”? </span>
                                     </button>
                                     </h2>
                                     <div id="cuser5" className="accordion-collapse collapse" aria-labelledby="user5" data-bs-parent="#accordionExample13">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0 fw-semibold">
                                         Archived User List: 
                                         </p>
@@ -1404,16 +1421,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-client" role="tabpanel" aria-labelledby="v-pills-client-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-client" role="tabpanel" aria-labelledby="v-pills-client-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample14">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient1" aria-expanded="true" aria-controls="cclient1">
-                                        <span className="ps-3 ms-1 fw-semibold">Who are “Clients”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">Who are “Clients”? </span>
                                     </button>
                                     </h2>
                                     <div id="cclient1" className="accordion-collapse collapse show" aria-labelledby="client1" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                              Clients are the people you bill for the work you have been hired to do. You can add, manage, archive, and delete your clients as your business grows. Each client profile can add a primary contact and multiple secondary contacts. This helps to set multiple contacts in client company.   
                                         </p>
@@ -1423,11 +1440,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient2" aria-expanded="false" aria-controls="cclient2">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Client Dashboard”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Client Dashboard”? </span>
                                     </button>
                                     </h2>
                                     <div id="cclient2" className="accordion-collapse collapse" aria-labelledby="client2" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             It displays the Overdue, Outstanding and Draft invoice amount of the clients on top. Recently updated are the clients who have been recently added to the system or recently modified. 
                                         </p>
@@ -1443,11 +1460,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient3" aria-expanded="false" aria-controls="cclient3">
-                                        <span className="ps-3 ms-1 fw-semibold">How to create “New Client”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How to create “New Client”?  </span>
                                     </button>
                                     </h2>
                                     <div id="cclient3" className="accordion-collapse collapse" aria-labelledby="client3" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                       <p className="mb-0">Click on the “Add Client” button to create a new client. </p>
                                       <p className="mb-0">•	Enter Company Name, Address line, City, State, Country, Zip code, Time Zone, Website, Note </p>
                                       <p className="mb-0">•	Upload photo option used to upload the picture. (Only .jpg and .png format is acceptable) </p>
@@ -1468,11 +1485,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient4" aria-expanded="false" aria-controls="cclient4">
-                                        <span className="ps-3 ms-1 fw-semibold">Charge Late Fees:  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">Charge Late Fees:  </span>
                                     </button>
                                     </h2>
                                     <div id="cclient4" className="accordion-collapse collapse" aria-labelledby="client4" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0 fw-semibold">
                                         You can Charge Late Fees from client in two ways: 
                                         </p>
@@ -1492,11 +1509,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient5" aria-expanded="false" aria-controls="cclient5">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Client Details”?</span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Client Details”?</span>
                                     </button>
                                     </h2>
                                     <div id="cclient5" className="accordion-collapse collapse" aria-labelledby="client5" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                         Details of the client like Organization Name, Profile Picture, Primary Contact details will display on the client details page.  
                                         </p>
@@ -1527,11 +1544,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="client6">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cclient6" aria-expanded="false" aria-controls="cclient6">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Archived/Deleted Client list”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Archived/Deleted Client list”? </span>
                                     </button>
                                     </h2>
                                     <div id="cclient6" className="accordion-collapse collapse" aria-labelledby="client6" data-bs-parent="#accordionExample14">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0 fw-semibold">
                                         Archived Client List:  
                                         </p>
@@ -1568,16 +1585,16 @@ function FAQ() {
                                 </div>
                             </div>
                         </div>
-                        <div className="tab-pane fade card shadow border-0 p-4" id="v-pills-acivities" role="tabpanel" aria-labelledby="v-pills-acivities-tab" tabIndex="0">
+                        <div className="tab-pane fade card border-0" id="v-pills-acivities" role="tabpanel" aria-labelledby="v-pills-acivities-tab" tabIndex="0">
                             <div className="accordion accordion-flush faq-accordian" id="accordionExample15">
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="acti1">
                                     <button className="accordion-button p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cacti1" aria-expanded="true" aria-controls="cacti1">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Activities”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Activities”? </span>
                                     </button>
                                     </h2>
                                     <div id="cacti1" className="accordion-collapse collapse show" aria-labelledby="acti1" data-bs-parent="#accordionExample15">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             Activities features make it easy for you to manage activity tracking of your employees like Web and App Usage Tracking, Location Tracking, Screenshot Capturing. 
                                         </p>
@@ -1588,11 +1605,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="acti2">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cacti2" aria-expanded="false" aria-controls="cacti2">
-                                        <span className="ps-3 ms-1 fw-semibold">How does “Real time Tracking Work”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">How does “Real time Tracking Work”? </span>
                                     </button>
                                     </h2>
                                     <div id="cacti2" className="accordion-collapse collapse" aria-labelledby="acti2" data-bs-parent="#accordionExample15">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0 fw-semibold">Team Tracking: </p>
                                        <p className="mb-0">You can track real time activities of your employees from Team Tracking tab. </p>
                                        <p className="mb-0">Header part displays tracked data of current date: </p>
@@ -1651,11 +1668,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="acti3">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cacti3" aria-expanded="false" aria-controls="cacti3">
-                                        <span className="ps-3 ms-1 fw-semibold">What is “Time and Attendance”?  </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What is “Time and Attendance”?  </span>
                                     </button>
                                     </h2>
                                     <div id="cacti3" className="accordion-collapse collapse" aria-labelledby="acti3" data-bs-parent="#accordionExample15">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                        <p className="mb-0">You can see your tracked activities in time and attendance: </p>
                                        <p className="mb-0">Your name, Profile Image, Role, Time Zone, Working Hours </p>
                                        <p className="mb-0">Productivity Tab (Calculated from agent application) </p>
@@ -1674,11 +1691,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="acti4">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cacti4" aria-expanded="false" aria-controls="cacti4">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Screenshots”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Screenshots”? </span>
                                     </button>
                                     </h2>
                                     <div id="cacti4" className="accordion-collapse collapse" aria-labelledby="acti4" data-bs-parent="#accordionExample15">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             You can set multiple screen-capturing requests based on team requirements and view them at any given time. In Time pro, offers multiple ways of tracking, depending on whether employees are using personal or company-owned computers. Screenshots capturing can be manual OR automatic (based on working hours or the settings provided from capture settings at global and user level). 
                                         </p>
@@ -1706,11 +1723,11 @@ function FAQ() {
                                 <div className="accordion-item border-0">
                                     <h2 className="accordion-header" id="acti5">
                                     <button className="accordion-button collapsed p-0" type="button" data-bs-toggle="collapse" data-bs-target="#cacti5" aria-expanded="false" aria-controls="cacti5">
-                                        <span className="ps-3 ms-1 fw-semibold">What are “Apps & Websites”? </span>
+                                        <span className="ps-3 ms-1 fw-bold fs-5">What are “Apps & Websites”? </span>
                                     </button>
                                     </h2>
                                     <div id="cacti5" className="accordion-collapse collapse" aria-labelledby="acti5" data-bs-parent="#accordionExample15">
-                                    <div className="accordion-body ps-4 ms-3 pb-2 pt-0">
+                                    <div className="accordion-body ps-5 ms-1 pb-2 pt-0">
                                         <p className="mb-0">
                                             This is an intelligent work monitoring functionality that helps you monitor your team members real-time work status. You can track the URLs and apps visited by employees and you can also find out the frequency of their visits and the amount of time spent on each website or app each day. 
                                         </p>
@@ -1726,7 +1743,7 @@ function FAQ() {
                 </div>
             </div>
         </section>
-
+{/* 
         <section>
             <div className='container py-5 mt-4'>
                 <h3 className='text-center pt-3 underline-text position-relative'>We got you covered with <span className="underline pb-1">Multiplatform Solution</span></h3>
@@ -1734,7 +1751,7 @@ function FAQ() {
                         <div className=''>
                             <div className='bg-white shadow download-card rounded pt-2 pb-3 px-3 d-flex align-items-end justify-content-center'>
                                 <Link href='/download-windows'>
-                                    <a className='d-flex align-items-end gap-2'>
+                                    <a className='d-flex align-items-end gap-2 text-decoration-none'>
                                         <div className='h-32'>
                                         <Image src={MicrosoftLogo} alt="Microsoft logo" width={30} height={32} />
                                         </div>
@@ -1749,7 +1766,7 @@ function FAQ() {
                         <div className=''>
                             <div className='bg-white shadow download-card rounded pt-2 pb-3 d-flex align-items-end justify-content-center'>
                                 <Link href='/download-macOS'>
-                                    <a className='d-flex align-items-end gap-2'>
+                                    <a className='d-flex align-items-end gap-2 text-decoration-none'>
                                         <div className='ps-1 h-32'>
                                             <Image src={AppletLogo} alt="Microsoft logo" width={25} height={30} />
                                         </div>
@@ -1764,7 +1781,7 @@ function FAQ() {
                         <div className=''>
                             <div className='bg-white shadow download-card rounded pt-2 pb-3 px-4 d-flex align-items-end justify-content-center'>
                                <Link href='/download-android'>
-                                <a className='d-flex align-items-end gap-2'>
+                                <a className='d-flex align-items-end gap-2 text-decoration-none'>
                                     <div className='ps-1'>
                                         <Image src={GooglePlayLogo} alt="Microsoft logo" width={20} height={20} />
                                     </div>
@@ -1779,7 +1796,7 @@ function FAQ() {
                         <div className=''>
                             <div className='bg-white shadow download-card rounded pt-2 pb-3 px-3 d-flex align-items-end justify-content-center'>
                                 <Link href='/download-iOS'>
-                                    <a className='d-flex align-items-end gap-2'>
+                                    <a className='d-flex align-items-end gap-2 text-decoration-none'>
                                         <div className='ps-1 h-35'>
                                             <Image src={MobileAppLogo} alt="Microsoft logo" width={20} height={35} />
                                         </div>
@@ -1794,6 +1811,8 @@ function FAQ() {
                    </div>
             </div>
         </section>
+
+         */}
 
         <CTA />
         <Footer />

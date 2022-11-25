@@ -1,6 +1,7 @@
 import Footer from "@components/Footer";
 import Header from "@components/Header";
 import Head from 'next/head'
+import Link from 'next/link'
 import Script from 'next/script';
 import Image from 'next/image'
 import android from '../styles/Assets/download_page/Android_White.svg'
@@ -8,6 +9,7 @@ import IphoneGreyScale from '../styles/Assets/download_page/iPhone_Greyscale.svg
 import WindowLogo from '../styles/Assets/download_page/Windows_Store_Greyscale.svg'
 import IosMobileLogo from '../styles/Assets/download_page/iOs_Greyscale.svg'
 import MacLogo from '../styles/Assets/download_page/Apple_Greyscale.svg'
+import BookDemo from "@components/book-demo";
 
 
 function DownloadAndroid() {
@@ -40,7 +42,7 @@ function DownloadAndroid() {
                 <div className="col-lg-8 col-xs-12">
                     <h4 className="fw-semibold">In Time Pro for Android</h4>
                     <p className="pb-3">Built to run on any Android - Android 9.0 or newer</p>
-                    <button className="btn btn-primary d-flex gap-2 align-items-center">
+                    <button className="btn btn-primary d-flex gap-2 align-items-center rounded-0">
                         <Image src={android}  alt="apple logo" /><span className="text-white fw-light">Download for Android</span>
                     </button>
                     <p className="text-muted mb-2 pt-1">Version 1.6.7 (Stable)</p>
@@ -92,11 +94,12 @@ function DownloadAndroid() {
                         <p className="text-white mb-0">Questions? Refer our FAQ's</p>
                     </div>
                     <div className="ps-4 me-3">
-                        <button className="btn btn-cta bg-white">FAQ</button>
+                        <Link href='/faq'><button className="btn btn-cta bg-white rounded-0">FAQ</button></Link>
                     </div>
-                    <div>
-                        <button className="btn btn-primary">BOOK DEMO</button>
-                    </div>
+                    {/* <div>
+                        <button className="btn btn-primary rounded-0" data-bs-toggle="modal" data-bs-target="#staticBackdrop">BOOK DEMO</button>
+                        <BookDemo />
+                    </div> */}
                 </div>
             </div>
     </section>
