@@ -12,7 +12,7 @@ import Script from 'next/script';
 import CTA from '../components/CTA'
 import WhyUseIntime from '@components/why-use-intime'
 import Features from '@components/features'
-import AutomationService from '../components/Automation-service'
+// import AutomationService from '../components/Automation-service'
 import HomePrice from '@components/home-price'
 import TrialDemo from '@components/trial-demo'
 import BookDemo from '@components/book-demo'
@@ -35,7 +35,7 @@ export default function Home() {
         <FeatureIntegration />
         <Features />
         <HomePrice />
-        <AutomationService />
+        {/* <AutomationService /> */}
         {/* <Testimonials /> */}
         {/* <ComoundYourGrowth /> */}
         
