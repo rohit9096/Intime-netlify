@@ -4,7 +4,7 @@ import PowerAppsImage from '/styles/Assets/Home_Assets/power-app-automation.png'
 import PowerPagesImage from '/styles/Assets/Home_Assets/power-pages-automation.png'
 import PowerAutomateImage from '/styles/Assets/Home_Assets/power-automate-automation.png'
 import VirtualAgentImage from '/styles/Assets/Home_Assets/virtual-apps-agents.png'
-import PowerBi from '/styles/Assets/Power-bi.svg'
+import Powerbi from '/styles/Assets/Powers-bi.svg'
 import VirtualAgent from '/styles/Assets/power-virtual-agents.svg'
 import PowerApps from '/styles/Assets/power-apps.svg'
 import PowerPages from '/styles/Assets/power-pages.svg'
@@ -24,7 +24,7 @@ function AutomationService() {
                         <div className="accordion-item border-0 mb-4">
                             <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button py-2 rounded border d-flex gap-3 align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                <Image src={PowerBi} alt="Power BI logo" width={40} height={40} />
+                                <Image src={Powerbi} alt="Power BI logo" width={40} height={40} />
                                 <span>Power BI</span>
                             </button>
                             </h2>
