@@ -890,7 +890,7 @@ section.active {
 }
 
 .feature-list > li:before { 
-  background: url("./Assets/intime-list-item.PNG");
+  background: url("/public/intime-list-item.PNG");
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

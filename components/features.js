@@ -9,6 +9,7 @@ import leavemanagement from '/styles/Assets/Home_Assets/leave-management-feature
 import { useEffect } from "react";
 
 
+
 function Features() {
     useEffect(() => {
         let path=window.location.href;
