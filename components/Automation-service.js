@@ -4,11 +4,11 @@ import PowerAppsImage from '/styles/Assets/Home_Assets/power-app-automation.png'
 import PowerPagesImage from '/styles/Assets/Home_Assets/power-pages-automation.png'
 import PowerAutomateImage from '/styles/Assets/Home_Assets/power-automate-automation.png'
 import VirtualAgentImage from '/styles/Assets/Home_Assets/virtual-apps-agents.png'
-// import PowerBi from '/styles/Assets/Home_Assets/Powerbi.png'
-import VirtualAgent from '/styles/Assets/Home_Assets/virtual-agent-tab.png'
-// import PowerApps from '/styles/Assets/Home_Assets/Powerapps.png'
-// import PowerPages from '/styles/Assets/Home_Assets/Powerpages.png'
-// import PowerAutomate from '/styles/Assets/Home_Assets/Powerautomation.png'
+import PowerBi from '/styles/Assets/Power-bi.svg'
+import VirtualAgent from '/styles/Assets/power-virtual-agents.svg'
+import PowerApps from '/styles/Assets/power-apps.svg'
+import PowerPages from '/styles/Assets/power-pages.svg'
+import PowerAutomate from '/styles/Assets/power-automates.svg'
 
 
 function AutomationService() {
@@ -24,7 +24,7 @@ function AutomationService() {
                         <div className="accordion-item border-0 mb-4">
                             <h2 className="accordion-header" id="headingOne">
                             <button className="accordion-button py-2 rounded border d-flex gap-3 align-items-center" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                {/* <Image src={PowerBi} alt="Power BI logo" width={40} height={40} /> */}
+                                <Image src={PowerBi} alt="Power BI logo" width={40} height={40} />
                                 <span>Power BI</span>
                             </button>
                             </h2>
@@ -44,7 +44,7 @@ function AutomationService() {
                         <div className="accordion-item border-0 mb-4">
                             <h2 className="accordion-header" id="headingTwo">
                             <button className="accordion-button py-2 d-flex gap-3 align-items-center rounded border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                {/* <Image src={PowerApps} alt="Power BI logo" width={40} height={40} /> */}
+                                <Image src={PowerApps} alt="Power BI logo" width={40} height={40} />
                                 <span>Power Apps</span>
                             </button>
                             </h2>
@@ -64,7 +64,7 @@ function AutomationService() {
                         <div className="accordion-item border-0 mb-4">
                             <h2 className="accordion-header" id="headingThree">
                             <button className="accordion-button py-2 d-flex gap-3 align-items-center rounded border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                {/* <Image src={PowerPages} alt="Power BI logo" width={40} height={40} /> */}
+                                <Image src={PowerPages} alt="Power BI logo" width={40} height={40} />
                                 <span>Power Pages</span>
                             </button>
                             </h2>
@@ -84,7 +84,7 @@ function AutomationService() {
                         <div className="accordion-item border-0 mb-4">
                             <h2 className="accordion-header" id="headingThree1">
                             <button className="accordion-button py-2 d-flex gap-3 align-items-center rounded border collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree1" aria-expanded="false" aria-controls="collapseThree1">
-                                {/* <Image src={PowerAutomate} alt="Power BI logo" width={40} height={40} /> */}
+                                <Image src={PowerAutomate} alt="Power BI logo" width={40} height={40} />
                                 <span>Power Automate</span>
                             </button>
                             </h2>

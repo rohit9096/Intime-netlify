@@ -819,6 +819,7 @@ section.active {
 .features-pill .nav-link.active{
   background: #F2FAFF 0% 0% no-repeat padding-box !important;
   border: 1px solid #D9F0FF !important;
+  color: #373736 !important;
 }
 .feature-icon{
   background: #DEF2FF;
