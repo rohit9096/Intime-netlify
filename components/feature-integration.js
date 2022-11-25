@@ -1,5 +1,3 @@
-import Image from 'next/image'
-import videodummy from '/styles/Assets/video-dummy.png'
 
 function FeatureIntegration() {
     return ( <>

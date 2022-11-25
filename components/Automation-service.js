@@ -4,11 +4,11 @@ import PowerAppsImage from '/styles/Assets/Home_Assets/power-app-automation.png'
 import PowerPagesImage from '/styles/Assets/Home_Assets/power-pages-automation.png'
 import PowerAutomateImage from '/styles/Assets/Home_Assets/power-automate-automation.png'
 import VirtualAgentImage from '/styles/Assets/Home_Assets/virtual-apps-agents.png'
-import PowerBi from '/styles/Assets/Home_Assets/Power_bi.png'
+import PowerBi from '/styles/Assets/Home_Assets/Powerbi.png'
 import VirtualAgent from '/styles/Assets/Home_Assets/virtual-agent-tab.png'
-import PowerApps from '/styles/Assets/Home_Assets/Power_apps.png'
-import PowerPages from '/styles/Assets/Home_Assets/Power_pages.png'
-import PowerAutomate from '/styles/Assets/Home_Assets/Power_automation.png'
+import PowerApps from '/styles/Assets/Home_Assets/Powerapps.png'
+import PowerPages from '/styles/Assets/Home_Assets/Powerpages.png'
+import PowerAutomate from '/styles/Assets/Home_Assets/Powerautomation.png'
 
 
 function AutomationService() {
