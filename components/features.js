@@ -170,7 +170,7 @@ function Features() {
                                     </g>
                                     </svg>
                                 </span>
-                                <span>Easy Invoicing</span><span className="badge rounded-pill custom-badge text-blue text-bg-primary">Coming Soon</span></div>
+                                <span>Easy Invoicing</span><span className="badge rounded-pill custom-badge text-blue">Coming Soon</span></div>
                         </button>
                         <button className="nav-link" id="productivity" data-bs-toggle="pill" data-bs-target="#v-pills-projects" type="button" role="tab" aria-controls="v-pills-projects" aria-selected="false">
                             <div className='d-flex align-items-center gap-2'>
@@ -220,13 +220,13 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Team/User Management</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Create multiple organisational units</li>
-                                            <li>​Invite and manage users</li>
-                                            <li>Import Users​</li>
-                                            <li>Easy export & share</li>
-                                            <li>​Shift scheduling</li>
-                                            <li>Archive/Delete Users</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create multiple organisational units</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>​Invite and manage users</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Import Users​</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Easy export & share</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>​Shift scheduling</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Archive/Delete Users</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -242,13 +242,13 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>​Client Management​</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Invite Clients</li>
-                                            <li>​Manage multiple clients​</li>
-                                            <li>Link multiple projects to a client</li>
-                                            <li>​Easy invoicing​</li>
-                                            <li>Easy export & share</li>
-                                            <li>Archive/Delete Clients</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Invite Clients</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>​Manage multiple clients​</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Link multiple projects to a client</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>​Easy invoicing​</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Easy export & share</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Archive/Delete Clients</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -264,13 +264,13 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Project Management</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Create and manage multiple projects</li>
-                                            <li>Allocate team members to the project</li>
-                                            <li>Link tasks/timesheet to projects</li>
-                                            <li>Easy export & share</li>
-                                            <li>Create detailed project reports in seconds</li>
-                                            <li>Archive/ Delete projects</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create and manage multiple projects</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Allocate team members to the project</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Link tasks/timesheet to projects</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Easy export & share</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create detailed project reports in seconds</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Archive/ Delete projects</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -286,14 +286,14 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Task/Time Management</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Create and assign tasks to the team members</li>
-                                            <li>Import / Export tasks list</li>
-                                            <li>Track your tasks with automated timer</li>
-                                            <li>Automated user's status update</li>
-                                            <li>Tasks calendar view with Outlook integration</li>
-                                            <li>Link Tasks to Timesheets</li>
-                                            <li>Add manual time entry to the task</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create and assign tasks to the team members</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Import / Export tasks list</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Track your tasks with automated timer</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Automated user's status update</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Tasks calendar view with Outlook integration</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Link Tasks to Timesheets</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Add manual time entry to the task</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -309,14 +309,14 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Timesheet Management</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Create daily, weekly & monthly timesheets</li>
-                                            <li>My timesheet list</li>
-                                            <li>Approve/reject timesheets</li>
-                                            <li>Easy export & share</li>
-                                            <li>Timesheet summary view for each project</li>
-                                            <li>Add manual task into the timesheet</li>
-                                            <li>Timesheet timeline</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create daily, weekly & monthly timesheets</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>My timesheet list</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Approve/reject timesheets</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Easy export & share</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Timesheet summary view for each project</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Add manual task into the timesheet</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Timesheet timeline</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -332,16 +332,16 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Employee Monitoring</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Real-time team tracking</li>
-                                            <li>Location tracking</li>
-                                            <li>Time & attendance</li>
-                                            <li>Private mode option</li>
-                                            <li>Add manual offline time</li>
-                                            <li>Offline tracking</li>
-                                            <li>Track apps & websites</li>
-                                            <li>View real-time employees' screenshots</li>
-                                            <li>Export custom reports</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Real-time team tracking</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Location tracking</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Time & attendance</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Private mode option</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Add manual offline time</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Offline tracking</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Track apps & websites</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>View real-time employees' screenshots</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Export custom reports</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -357,21 +357,14 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Time-off/ Leave Management</h6>
-                                        <ul style={{
-                                            backgroundImage: `url(${bg.src})`,
-                                            backgroundSize: 'contain',
-                                            backgroundPosition: 'center',
-                                            backgroundRepeat: 'no-repeat',
-                                            marginRight: '8px',
-                                            marginTop: '2px'
-                                            }} className='px-4 feature-list'>
-                                            <li>Add new custom time off</li>
-                                            <li>Manage my Time off list</li>
-                                            <li>Approve/reject time off</li>
-                                            <li>Location based public holidays</li>
-                                            <li>Team leave Calendar</li>
-                                            <li>Audit time-off timeline</li>
-                                            <li>Export custom leave report</li>
+                                        <ul className='feature-list px-0'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Add new custom time off</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Manage my Time off list</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Approve/reject time off</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Location based public holidays</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Team leave Calendar</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Audit time-off timeline</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Export custom leave report</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -387,11 +380,11 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Easy invoicing</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Create automated professional invoices</li>
-                                            <li>Track all client's and business invoices</li>
-                                            <li>Rate product & services</li>
-                                            <li>Easy export & share reports</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Create automated professional invoices</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Track all client's and business invoices</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Rate product & services</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Easy export & share reports</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -407,11 +400,11 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Productivity definition & calculation</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Categories applications</li>
-                                            <li>Define productive/unproductive/ neutral apps</li>
-                                            <li>Productivity calculation</li>
-                                            <li>Links apps to Projects, Users & Unit</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Categories applications</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Define productive/unproductive/ neutral apps</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Productivity calculation</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Links apps to Projects, Users & Unit</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
@@ -427,11 +420,11 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Desktop & Mobile Apps</h6>
-                                        <ul className='px-4 feature-list'>
-                                            <li>Window Agent app</li>
-                                            <li>MAC App</li>
-                                            <li>Android App</li>
-                                            <li>iOS App</li>
+                                        <ul className='px-0 feature-list'>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Window Agent app</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>MAC App</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>Android App</li>
+                                            <li className='d-flex align-items-center gap-2'><Image src={bg} height={13} width={25}/>iOS App</li>
                                         </ul>
                                         <div className='d-flex pt-3 gap-4 align-items-center'>
                                             {/* <a href='#'><button className='btn btn-info bg-white rounded-0 primary-outline text-blue text-decoration-none'>Learn More &gt;&gt;</button></a> */}
