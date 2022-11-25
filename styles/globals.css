@@ -137,7 +137,8 @@ h6{
 }
 .btn-primary-outline, .btn-primary-outline:hover{
   border: 1px solid #E60000 !important;
-  color: #E60000 !important;
+  color: #fff !important;
+  background-color: #E60000;
 }
 .blue-title{
   letter-spacing: 0.36px;
@@ -153,6 +154,7 @@ h6{
 .primary-text{
   color: #E60000;
 }
+
 
 
 /* =============== navigation styling =================== */
@@ -851,14 +853,14 @@ section.active {
   color: #0095FF;
   font-weight: 600;
 }
-/* .feature-list li:before{
+.feature-list li:before{
   background: url('./Assets/intime-list-item.PNG');
   width: 10px;
   height: 10px;
 }
 .feature-list li{
   list-style-type: none;
-} */
+}
 
 /* .feature-list {
   display: inline-block;
@@ -890,7 +892,7 @@ section.active {
 }
 
 .feature-list > li:before { 
-  background: url("Assets/intime-list-item.PNG");
+  /* background: url("Assets/intime-list-item.PNG"); */
   background-size: contain;
   background-position: center;
   background-repeat: no-repeat;

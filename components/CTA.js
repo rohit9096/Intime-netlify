@@ -17,12 +17,12 @@ function CTA() {
                         <div>
                         <h5 className="text-white pb-4 pt-3">Boosting Productivity was never so easy.</h5>
                         <div className='d-flex gap-3 pb-md-3 pb-sm-3 sm-d-block'>
-                            <div className="input-group mb-3 input-max">
-                                <input type="email" className="form-control primary-outline rounded-0" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2" />
-                                <button className="btn btn-cta btn-outline-secondary btn-success rounded-0 text-white ps-md-0" type="button" id="button-addon2">Book a demo</button>
+                            <div className="mb-3">
+                                {/* <input type="email" input-group mb-3 input-max className="form-control primary-outline rounded-0" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2" /> */}
+                                <button className="btn btn-outline-secondary btn-success rounded-0 text-white" type="button" data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book a demo</button>
                             </div>
                             <div>
-                            <a href="#" type='button' className=' fw-light text-decoration-none' data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><button className="btn rounded-0 text-white text-decoration-none">Start a free trial &gt;&gt;</button></a>
+                            <a href="#" type='button' className='fw-light text-decoration-none' data-bs-toggle="modal" data-bs-target="#staticBackdrop1"><button className="btn rounded-0 bg-transparent border-0  text-white text-decoration-none">Start a free trial &gt;&gt;</button></a>
                             </div>
                         </div>
                         <TrialDemo />

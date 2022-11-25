@@ -7,6 +7,9 @@ import TimesheetManagement from '/styles/Assets/Home_Assets/timesheet-management
 import employeemonitoring from '/styles/Assets/Home_Assets/employee-monitoring.png'
 import leavemanagement from '/styles/Assets/Home_Assets/leave-management-feature.png'
 import { useEffect } from "react";
+import bg from '/styles/Assets/intime-list-item.PNG'
+
+
 
 
 
@@ -26,6 +29,7 @@ function Features() {
     })
    
     return ( <>
+   
     
     <section className="pt-5" id="features">
             <div className="container text-center pb-5">
@@ -353,7 +357,14 @@ function Features() {
                                     </div>
                                     <div className='col-lg-6 col-md-6 col-sm-12'>
                                         <h6>Time-off/ Leave Management</h6>
-                                        <ul className='px-4 feature-list'>
+                                        <ul style={{
+                                            backgroundImage: `url(${bg.src})`,
+                                            backgroundSize: 'contain',
+                                            backgroundPosition: 'center',
+                                            backgroundRepeat: 'no-repeat',
+                                            marginRight: '8px',
+                                            marginTop: '2px'
+                                            }} className='px-4 feature-list'>
                                             <li>Add new custom time off</li>
                                             <li>Manage my Time off list</li>
                                             <li>Approve/reject time off</li>

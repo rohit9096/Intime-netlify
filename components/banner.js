@@ -23,8 +23,9 @@ function Banner() {
                     </div>
                     <div className='d-flex gap-3 pe-5 sm-pe-0'>
                         <div className="input-group mb-3">
-                            <input type="email" className="form-control primary-outline rounded-0" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2" />
-                            <button className="btn btn-cta btn-outline-secondary btn-success rounded-0 text-white" type="button" id="button-addon2">Book a demo</button>
+                            {/* <input type="email" className="form-control primary-outline rounded-0" placeholder="Email address" aria-label="Email address" aria-describedby="button-addon2" /> */}
+                            <button className="btn btn-cta btn-outline-secondary btn-success rounded-0 text-white" type="button"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Book a demo</button>
+                            <a href="#"><button className="btn btn-primary-outline rounded-0 text-white ms-4" data-bs-toggle="modal" data-bs-target="#staticBackdrop1">Start free trial</button></a>
                         </div>
                     </div>
                 </div>
