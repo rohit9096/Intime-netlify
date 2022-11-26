@@ -29,7 +29,7 @@ function Banner() {
                         </div>
                     </div>
                 </div>
-                <div className='col-xl-7 col-lg-12 col-sm-12'>
+                <div className='col-xl-7 col-lg-12 col-sm-12 banner-width'>
                     {/* <Image src={BannerImage} alt="Home Banner" width={1300} height={800} /> */}
                     <svg className='banner-svg' width="764.46" height="451.058" viewBox="0 0 864.46 551.058">
                         <defs>
@@ -45,49 +45,49 @@ function Banner() {
                             <filter id="Rectangle_36485" x="616.46" y="88.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36486" x="290.46" y="193.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-2"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-2"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36487" x="242.46" y="288.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-3"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-3"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36488" x="85.46" y="416.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-4"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-4"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36489" x="33.46" y="148.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-5"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-5"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36490" x="742.46" y="378.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-6"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-6"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>
                             <filter id="Rectangle_36491" x="811.46" y="216.558" width="53" height="53" filterUnits="userSpaceOnUse">
                             <feOffset input="SourceAlpha"/>
                             <feGaussianBlur stdDeviation="7.5" result="blur-7"/>
-                            <feFlood floodColor="#388cf4" flood-opacity="0.302"/>
+                            <feFlood floodColor="#388cf4" floodOpacity="0.302"/>
                             <feComposite operator="in" in2="blur-7"/>
                             <feComposite in="SourceGraphic"/>
                             </filter>

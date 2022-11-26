@@ -70,7 +70,7 @@ function Footer() {
                         <li className='mb-3'><Link href='/#cross-platform' scroll={false}><a className='fw-light text-decoration-none'>Desktop / Mobile Apps</a></Link></li> */}
                     </ul>
                 </div>
-                <div className="col-lg-2 col-xs-12 links ps-5 ps-md-2 ms-md-1 ps-sm-2 ms-sm-1">
+                <div className="col-lg-2 col-xs-12 links ps-5 ps-md-2 ms-md-1 ms-sm-1" id='ps-sm-2'>
                     <p className=' text-dark fw-bold mb-3'>Company</p>
                         <ul className="m-0 p-0 list-unstyled">
                             <li className='mb-3'><Link href='/#home-price' scroll={false}><a className=' fw-light text-decoration-none'>Pricing</a></Link></li>

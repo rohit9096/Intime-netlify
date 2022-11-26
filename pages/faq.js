@@ -16,7 +16,7 @@ function FAQ() {
     return ( <>
 
         <Head>
-            <title>FAQ's | Intime-Pros</title>
+            <title>in time PRO | FAQ's</title>
             <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous" />
         </Head>
         <Header />
@@ -49,7 +49,7 @@ function FAQ() {
                 <h5 className="pt-4 pb-5 fw-bold">Categories</h5>
             </div>
             <div className="container p-4 mb-5 ">
-                <div className="d-flex align-items-start row">
+                <div className="d-flex align-items-start row" id='faq-tabs'>
                     <div className="nav flex-column nav-pills features-pill col-lg-2 col-xs-12 pe-4 sm-pe-0 mb-4 pe-md-0" id="v-pills-tab" role="tablist" aria-orientation="vertical">
                         <button className="nav-link active" id="v-pills-General-tab" data-bs-toggle="pill" data-bs-target="#v-pills-general" type="button" role="tab" aria-controls="v-pills-General" aria-selected="true">General</button>
                         <button className="nav-link" id="v-pills-Started-tab" data-bs-toggle="pill" data-bs-target="#v-pills-Started" type="button" role="tab" aria-controls="v-pills-Started" aria-selected="false">Getting Started</button>
