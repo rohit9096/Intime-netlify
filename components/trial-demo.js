@@ -56,6 +56,11 @@ function TrialDemo() {
                                             </label>
                                         </div>
                                         </div>
+                                        <p class="hidden d-none">
+                                            <label>
+                                            Don't fill this out if you're human: <input name="bot-field" />
+                                            </label>
+                                        </p>
                                         <div>
                                             <button type="submit" className="btn btn-primary mb-3 w-100 rounded-0">Start Your FREE 14-Days Trial</button>
                                         </div>
