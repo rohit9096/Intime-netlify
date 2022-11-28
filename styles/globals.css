@@ -1191,6 +1191,9 @@ svg.banner-svg {
 .social-login {
   display: block !important;
 }
+#social-login{
+  display: block !important;
+}
 .grid-automation {
   display: grid;
   grid-template-columns: auto;

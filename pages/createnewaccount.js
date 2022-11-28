@@ -29,7 +29,7 @@ function CreateNewAccount() {
                         <div className="card py-4 login-card border-0 mx-md-auto mt-md-5 mb-md-5">
                                 <Image src={logo} className="login-intime"  alt="logo" width={60} height={50} />
                                 <p className="fs-4 fw-semibold text-center pt-4"> Sign Up</p>
-                                <div className="social-login d-flex sm-d-block justify-content-between pt-2">
+                                <div className="social-login d-flex sm-d-block justify-content-between pt-2" id="social-login">
                                     <button type="button" className="google-btn primary-outline d-flex align-items-center gap-2 justify-content-center px-3 py-2 bg-white rounded-0 sm-w-100 sm-mb-1">
                                         <Image src={Mslogo} alt="Microsoft logo" width={24} height={24} />
                                          <p className="btn-text mb-0 fw-light">Sign in with Microsoft</p>
