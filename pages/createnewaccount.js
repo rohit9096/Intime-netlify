@@ -43,27 +43,33 @@ function CreateNewAccount() {
                                 <div className="d-flex justify-content-center pt-3">
                                     <p className="orborder divider line one-line"><span className="ps-2">Or</span></p>
                                 </div>
-                                <form className="px-2">
+                                <form className="px-2" name="createaccount" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field" action='/Thankyou'>
+                                    <input type="hidden" name="form-name" value="createaccount" />
                                     <div className="mb-3">
-                                        <label htmlFor="Name" className="form-label mb-0">Name</label>
-                                        <input type="text" className="form-control primary-outline" id="Name" placeholder="Enter full name" />
+                                        <label htmlFor="Name" className="form-label mb-0">Name <span className='required'>*</span></label>
+                                        <input type="text" className="form-control primary-outline" name="name" id="Name" placeholder="Enter full name" required />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="exampleInputEmail1" className="form-label mb-0">Email</label>
-                                        <input type="email" className="form-control primary-outline" id="exampleInputEmail1" placeholder="Enter email address" aria-describedby="emailHelp" />
+                                        <label htmlFor="exampleInputEmail1" className="form-label mb-0">Email <span className='required'>*</span></label>
+                                        <input type="email" className="form-control primary-outline" name="email" id="exampleInputEmail1" placeholder="Enter email address" aria-describedby="emailHelp" required />
                                     </div>
                                     <div className="mb-3">
-                                        <label htmlFor="exampleInputPassword1" className="form-label mb-0">Password</label>
-                                        <input type="password" className="form-control primary-outline" id="exampleInputPassword1" placeholder="Enter password" />
+                                        <label htmlFor="exampleInputPassword1" className="form-label mb-0">Password <span className='required'>*</span></label>
+                                        <input type="password" className="form-control primary-outline" name="password" id="exampleInputPassword1" placeholder="Enter password" required />
                                         <small className="text-muted password-note">Use 6 or more characters with a mix of letters, numbers and symbols</small>
                                     </div>
                                     <div className="mb-4 d-flex justify-content-between">
                                         <div className="d-flex gap-2 align-items-center">
-                                            <input type="checkbox" className="form-check-input mt-0" id="exampleCheck1" />
+                                            <input type="checkbox" className="form-check-input mt-0" name="accept terms of service" id="exampleCheck1" required />
                                             <label className="form-check-label" htmlFor="exampleCheck1">I accept the</label>
                                             <a href="#" className="text-blue text-decoration-none">Terms of Service</a>
                                         </div>
                                     </div>
+                                        <p className="hidden d-none">
+                                            <label>
+                                            Don't fill this out if you're human: <input name="bot-field" />
+                                            </label>
+                                        </p>
                                     <button type="submit" className="btn btn-success w-100 text-white rounded-0">CREATE MY ACCOUNT</button>
                                     <div className="d-flex gap-2 justify-content-center pt-3">
                                         <p className="mb-0">Already have account?</p>

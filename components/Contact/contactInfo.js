@@ -48,7 +48,7 @@ function ContactInfo() {
                                                 <textarea className="form-control rounded-0" id="Message" name='Message' rows="3" placeholder='Message'></textarea>
                                             </div>
                                         </div>
-                                        <p class="hidden d-none">
+                                        <p className="hidden d-none">
                                             <label>
                                             Don't fill this out if you're human: <input name="bot-field" />
                                             </label>

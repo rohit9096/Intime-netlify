@@ -31,14 +31,15 @@ function SignIn() {
                                     <div className="d-flex justify-content-center pt-3 ps-3">
                                         <p>Or</p>
                                     </div>
-                                    <form className="px-2">
+                                    <form className="px-2" name="Signin" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field" action='/Thankyou'>
+                                        <input type="hidden" name="form-name" value="Signin" />
                                         <div className="mb-3">
-                                            <label htmlFor="exampleInputEmail1" className="form-label mb-0">Email</label>
-                                            <input type="email" className="form-control primary-outline" id="exampleInputEmail1" placeholder="mail.example.com" aria-describedby="emailHelp" />
+                                            <label htmlFor="exampleInputEmail1" className="form-label mb-0">Email <span className='required'>*</span></label>
+                                            <input type="email" className="form-control primary-outline" id="exampleInputEmail1" placeholder="mail.example.com" aria-describedby="emailHelp" required />
                                         </div>
                                         <div className="mb-3">
-                                            <label htmlFor="exampleInputPassword1" className="form-label mb-0">Password</label>
-                                            <input type="password" className="form-control primary-outline" id="exampleInputPassword1" placeholder="Enter your password here" />
+                                            <label htmlFor="exampleInputPassword1" className="form-label mb-0">Password <span className='required'>*</span></label>
+                                            <input type="password" className="form-control primary-outline" id="exampleInputPassword1" placeholder="Enter your password here" required />
                                         </div>
                                         <div className="mb-4 d-flex justify-content-between">
                                             <div className="d-flex gap-2 align-items-center">
@@ -49,6 +50,11 @@ function SignIn() {
                                                 <a href="#" className="primary-link text-decoration-none">Forgot password?</a>
                                             </div>
                                         </div>
+                                        <p className="hidden d-none">
+                                            <label>
+                                            Don't fill this out if you're human: <input name="bot-field" />
+                                            </label>
+                                        </p>
                                         <button type="submit" className="btn btn-success w-100 text-white">SIGN IN</button>
                                         <div className="d-flex gap-2 justify-content-center pt-4">
                                             <p className="mb-0">Need an account?</p>
