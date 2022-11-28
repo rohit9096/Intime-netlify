@@ -32,7 +32,7 @@ function ContactInfo() {
                                 </div>
                             </div>
                             <div className='col-lg-12 col-xs-12 contact-form-div px-5 pt-5 pb-3 mt-5 sm-px-1'>
-                                    <form className='px-0' name="contact-form" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field">
+                                    <form className='px-0' name="contact-form" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field" action='/Thankyou'>
                                         <input type="hidden" name="form-name" value="contact-form" />  
                                         <div className='row'>
                                             <div className="col-lg-6 col-xs-12 mb-4">
@@ -45,10 +45,10 @@ function ContactInfo() {
                                         
                                         <div className='row'>
                                             <div className="col-lg-12 col-xs-12 mb-4">
-                                                <textarea className="form-control rounded-0" id="Message" rows="3" placeholder='Message'></textarea>
+                                                <textarea className="form-control rounded-0" id="Message" name='Message' rows="3" placeholder='Message'></textarea>
                                             </div>
                                         </div>
-                                        <p class="hidden">
+                                        <p class="hidden d-none">
                                             <label>
                                             Don't fill this out if you're human: <input name="bot-field" />
                                             </label>
