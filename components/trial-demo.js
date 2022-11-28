@@ -31,26 +31,26 @@ function TrialDemo() {
                                <h6 className='fs-5 fw-semibold'>Start your FREE 14-Days Trial</h6>                         
                                <div className='book-demo-form pt-3'>
                                     <form className="row g-3" name="Free-Trial" method="POST" data-netlify="true" onSubmit="submit" netlify-honeypot="bot-field" action='/Thankyou'>
-                                        <input type="hidden" name="Free-Trial" value="Free-Trial" /> 
+                                        <input type="hidden" name="form-name" value="Free-Trial" /> 
                                         <div>
                                             <label htmlFor="Name" className='mb-1'>Name <span className='required'>*</span></label>
-                                            <input type="text" className="form-control rounded-0" id="Name" name="name" placeholder='Amelia Miles' />
+                                            <input type="text" className="form-control rounded-0" id="Name" name="name" placeholder='Amelia Miles' required />
                                         </div>
                                         <div>
                                             <label htmlFor="Email" className='mb-1'>Email Address <span className='required'>*</span></label>
-                                            <input type="Email" className="form-control rounded-0" id="Email" name="email" placeholder="amelia.miles@organization.com" />
+                                            <input type="Email" className="form-control rounded-0" id="Email" name="email" placeholder="amelia.miles@organization.com" required />
                                         </div>
                                         <div>
                                             <label htmlFor="CompanyName" className='mb-1'>Company Name <span className='required'>*</span></label>
-                                            <input type="text" className="form-control rounded-0" id="CompanyName" name='companyname'  placeholder="Organization Pvt. Ltd." />
+                                            <input type="text" className="form-control rounded-0" id="CompanyName" name='companyname'  placeholder="Organization Pvt. Ltd." required />
                                         </div>
                                         <div>
                                             <label htmlFor="Password" className='mb-1'>Password <span className='required'>*</span></label>
-                                            <input type="password" className="form-control rounded-0" id="Password" name='password' placeholder="Enter 8 or more characters" />
+                                            <input type="password" className="form-control rounded-0" id="Password" name='password' placeholder="Enter 8 or more characters" required />
                                         </div>
                                         <div>
                                             <div className="form-check">
-                                            <input className="form-check-input" name='agree' type="checkbox" id="inlineFormCheck" />
+                                            <input className="form-check-input" name='agree' type="checkbox" id="inlineFormCheck" required />
                                             <label className="form-check-label" htmlFor="inlineFormCheck">
                                                 <small>I agree to the terms & privacy policy</small>
                                             </label>
