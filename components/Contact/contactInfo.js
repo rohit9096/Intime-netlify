@@ -32,7 +32,7 @@ function ContactInfo() {
                                 </div>
                             </div>
                             <div className='col-lg-12 col-xs-12 contact-form-div px-5 pt-5 pb-3 mt-5 sm-px-1'>
-                                    <form className='px-0' name="contact" method="POST" data-netlify="true" data-netlify-recaptcha="true">
+                                    <form className='px-0' name="contact" method="POST" data-netlify="true" onSubmit="submit" data-netlify-recaptcha="true">
                                         <input type="hidden" name="form-name" value="contact" />  
                                         <div className='row'>
                                             <div className="col-lg-6 col-xs-12 mb-4">

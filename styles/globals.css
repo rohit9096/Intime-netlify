@@ -1185,6 +1185,9 @@ svg.banner-svg {
 .signin-bg, #free-tri{
   height: auto !important;
 }
+#sign{
+  height: auto !important;
+}
 .social-login {
   display: block !important;
 }
@@ -1194,6 +1197,13 @@ svg.banner-svg {
 }
 .auto-ms-0{
   margin-left: 0rem !important;
+}
+.here-out{
+  margin-right: 0rem !important;
+  padding-right: 0rem !important;
+}
+#smblock{
+  display: block !important;
 }
 }
 

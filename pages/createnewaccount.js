@@ -22,7 +22,7 @@ function CreateNewAccount() {
     
         <Header />
         <TrialDemo />
-        <div className="container-fluid signin-bg vh-100 d-flex align-items-center vh-md-auto">
+        <div className="container-fluid signin-bg vh-100 d-flex align-items-center vh-md-auto" id="sign">
             <div className="container">
                 <div className="row">
                     <div className="col-lg-6 col-xl-6 col-md-12 col-sm-12 sm-px-0 sm-my-3">

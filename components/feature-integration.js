@@ -43,7 +43,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='com-gradient'>Administrator</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
                             </div>
                         </div>
                     </div>
@@ -54,7 +54,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='contractor-gradient'>Contractor</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>I work with various teams and intime pro has helped me share information with my team mates even when I work remotely.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>I work with various teams and intime pro has helped me share information with my team mates even when I work remotely.</p>
                             </div>
                         </div>
                     </div>
@@ -65,7 +65,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='customer-gradient'>Customer</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>Since the time I have started using intime pro, I have complete transparency of the projects the teams are working on. I get a 360 degree bird view on the health of the project. As a customer I get complete attention, committed team and value for money.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>Since the time I have started using intime pro, I have complete transparency of the projects the teams are working on. I get a 360 degree bird view on the health of the project. As a customer I get complete attention, committed team and value for money.</p>
                             </div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='employee-gradient'>Employee</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>using intime pro, I am able to evaluate and improve my personal productivity by prioritizing tasks and complete them in a timely manner thus contributing to the success of the project.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>using intime pro, I am able to evaluate and improve my personal productivity by prioritizing tasks and complete them in a timely manner thus contributing to the success of the project.</p>
                             </div>
                         </div>
                     </div>
@@ -87,7 +87,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='executive-gradient'>Executive</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
                             </div>
                         </div>
                     </div>
@@ -98,7 +98,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='hr-gradient'>HR Executive</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>intime pro allows me to gauge an employee's performance based on his ability to complete tasks in timely fashion, which helps in planning areas of improvement and to strengthen his career path.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>intime pro allows me to gauge an employee's performance based on his ability to complete tasks in timely fashion, which helps in planning areas of improvement and to strengthen his career path.</p>
                             </div>
                         </div>
                     </div>
@@ -109,7 +109,7 @@ function FeatureIntegration() {
                             </div>
                             <div className='col-xxl-6 col-xl-6 col-lg-12 col-md-12 col-sm-12 mb-4'>
                                 <h3 className='fw-bold'><span className='com-gradient'>Manager</span> Success Story</h3>
-                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
+                                <p className='text-muted fs-5 pe-5 pt-4 me-4 me-lg-0 pe-lg-0 sm-me-0 sm-px-0 here-out'>With intime pro, managing teams, projects and clients has become way easier, assigning new tasks to team members and allocate required resources to projects in few simple clicks.</p>
                             </div>
                         </div>
                     </div>
